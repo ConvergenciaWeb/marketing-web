@@ -1,2 +1,16 @@
-# marketing-web
-Esta es la web oficial de la empresa, construida con astro y flowbite si mas dependencias
+
+# Marketing web para `Convergencia Web`
+
+Este proyecto contienen la pagina publica de marketing de la empresa `Convergencia Web`
+
+
+## Authors
+
+- [@trongar](https://www.github.com/trongar)
+
+
+## Tech Stack
+
+- **Astro** 
+- **TailwindCSS**
+- **Flowbite**
