@@ -1,23 +1,15 @@
 export default {
-    site: "https://convergenciaweb.com/",
-    name: "Convergencia Web",
+    site: import.meta.env.PROD ? "https://convergenciaweb.com/" : "http://localhost:4321/",
+    name: "ConvergenciaWeb",
     phone: "9141089348",
     resources: [
         {
-            name: "Home",
+            name: "FAQ",
             url: "/"
         },
         {
-            name: "About",
-            url: "/about"
-        },
-        {
-            name: "Services",
-            url: "/services"
-        },
-        {
-            name: "Contact",
-            url: "/contact"
+            "name": "Blog",
+            "url": "/"
         }
     ],
     social: [
