@@ -2,7 +2,24 @@ export default {
     site: "https://convergenciaweb.com/",
     name: "Convergencia Web",
     phone: "9141089348",
-    resources: [],
+    resources: [
+        {
+            name: "Home",
+            url: "/"
+        },
+        {
+            name: "About",
+            url: "/about"
+        },
+        {
+            name: "Services",
+            url: "/services"
+        },
+        {
+            name: "Contact",
+            url: "/contact"
+        }
+    ],
     social: [
         {
             name: "Facebook",
