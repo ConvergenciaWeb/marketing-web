@@ -1,9 +1,19 @@
+---
+import config from "../config"
+
+interface Props {
+    title?: string
+}
+const {title} = Astro.props
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>{config.name}{title && `- ${title}`}</title>
+    <!-- icon -->
+    <link rel="icon" href="/favicon.svg" type="image/x-icon">
 </head>
 <body class="relative">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>

@@ -10,11 +10,24 @@ import Footer from "../components/footer.astro";
 ---
 
 <Layout>
+  <div id="home" />
   <Header />
   <Hero />
+  <div id="us" />
   <Features />
+  <div id="work" />
   <Protfolio />
+  <div id="team" />
   <Team />
+  <div id="contact" />
   <Contact />
   <Footer />
 </Layout>
+<style>
+  div {
+    scroll-margin-top: 100px;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
