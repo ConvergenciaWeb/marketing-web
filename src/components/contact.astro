@@ -3,46 +3,46 @@
 ---
 
 <section class="bg-white dark:bg-gray-900 py-4">
-  <div class="py-8 px-4 mx-auto max-w-screen-md bg-zinc-50 rounded-lg shadow-md">
+  <div
+    class="py-8 px-4 mx-auto max-w-screen-md bg-zinc-50 rounded-lg shadow-md"
+  >
     <h2
-      class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 "
+      class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900"
     >
       ¿Listo para Empezar?
     </h2>
-    <p
-      class="mb-8 lg:mb-16 font-light text-center text-gray-500  sm:text-xl"
-    >
+    <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 sm:text-xl">
       ¡Estamos aquí para ayudarte! Si estás interesado en nuestros servicios o
       tienes alguna pregunta, no dudes en ponerte en contacto con nosotros.
     </p>
     <form method="POST" id="form" class="space-y-8">
-      <input type="hidden" name="access_key" value="e4c60179-8d5d-4d9f-8014-c3c8979bf403">
+      <input
+        type="hidden"
+        name="access_key"
+        value="e4c60179-8d5d-4d9f-8014-c3c8979bf403"
+      />
       <div>
-        <label
-          for="name"
-          class="block mb-2 text-sm font-medium text-gray-900"
+        <label for="name" class="block mb-2 text-sm font-medium text-gray-900"
           >Tu nombre</label
         >
         <input
           type="text"
           id="name"
           name="name"
-          class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 "
+          class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
           placeholder="nombre"
           required
         />
       </div>
       <div>
-        <label
-          for="email"
-          class="block mb-2 text-sm font-medium text-gray-900"
+        <label for="email" class="block mb-2 text-sm font-medium text-gray-900"
           >Tu correo</label
         >
         <input
           type="email"
           id="email"
           name="email"
-          class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 "
+          class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
           placeholder="nombre@correo.com"
           required
         />
@@ -50,8 +50,7 @@
       <div class="sm:col-span-2">
         <label
           for="message"
-          class="block mb-2 text-sm font-medium text-gray-900"
-          >Mensaje</label
+          class="block mb-2 text-sm font-medium text-gray-900">Mensaje</label
         >
         <textarea
           id="message"
@@ -70,50 +69,47 @@
       >
     </form>
 
-    <script is:inline src="https://web3forms.com/client/script.js" async defer></script>
-    <script>
-      const form = document.querySelector<HTMLFormElement>('#form');
-      const result = document.getElementById('result');
-      
-      if(form) form.addEventListener('submit', function(e) {
-        e.preventDefault();
+    <script is:inline>
+      const form = document.getElementById("form");
+      const result = document.getElementById("result");
+
+      form.addEventListener("submit", function (e) {
         const formData = new FormData(form);
+        e.preventDefault();
+
         const object = Object.fromEntries(formData);
         const json = JSON.stringify(object);
-        if (result) result.innerHTML = "Please wait..."
-      
-          fetch('https://api.web3forms.com/submit', {
-                  method: 'POST',
-                  headers: {
-                      'Content-Type': 'application/json',
-                      'Accept': 'application/json'
-                  },
-                  body: json
-              })
-              .then(async (response) => {
-                  let json = await response.json();
-                  if (response.status == 200) {
-                    if (result) result.innerHTML = "Form submitted successfully";
-                  } else {
-                      console.log(response);
-                      if (result) result.innerHTML = json.message;
-                  }
-              })
-              .catch(error => {
-                  console.log(error);
-                  if (result) result.innerHTML = "Something went wrong!";
-              })
-              .then(function() {
-                  form.reset();
-                  setTimeout(() => {
-                    if (result) result.style.display = "none";
-                  }, 3000);
-              });
+
+        result.innerHTML = "Please wait...";
+
+        fetch("https://api.web3forms.com/submit", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          body: json,
+        })
+          .then(async (response) => {
+            let json = await response.json();
+            if (response.status == 200) {
+              result.innerHTML = json.message;
+            } else {
+              console.log(response);
+              result.innerHTML = json.message;
+            }
+          })
+          .catch((error) => {
+            console.log(error);
+            result.innerHTML = "Something went wrong!";
+          })
+          .then(function () {
+            form.reset();
+            setTimeout(() => {
+              result.style.display = "none";
+            }, 3000);
+          });
       });
-      </script>
+    </script>
   </div>
 </section>
-
-
-
-
