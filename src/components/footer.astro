@@ -41,15 +41,15 @@ import Icon from "./icon.astro";
             Síguenos
           </h2>
           <ul class="text-gray-600 dark:text-gray-400">
-            {config.social.map(red => (
-
+            {
+              config.social.map((red) => (
                 <li class="mb-4">
-                  <a
-                    href={red.url}
-                    class="hover:underline">{red.name}</a
-                  >
+                  <a href={red.url} class="hover:underline">
+                    {red.name}
+                  </a>
                 </li>
-            ))}
+              ))
+            }
           </ul>
         </div>
         <div>
@@ -63,7 +63,9 @@ import Icon from "./icon.astro";
               <a href="pdp" class="hover:underline">Politicas de privacidad</a>
             </li>
             <li>
-              <a href="tyc" class="hover:underline">Terminos &amp; Condiciones</a>
+              <a href="tyc" class="hover:underline"
+                >Terminos &amp; Condiciones</a
+              >
             </li>
           </ul>
         </div>
@@ -72,8 +74,7 @@ import Icon from "./icon.astro";
     <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
     <div class="sm:flex sm:items-center sm:justify-between">
       <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
-        >© 2024 <a href={config.site} class="hover:underline"
-          >{config.name}</a
+        >© 2024 <a href={config.site} class="hover:underline">{config.name}</a
         >.
       </span>
       <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
