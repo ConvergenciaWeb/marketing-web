@@ -7,5 +7,12 @@ import config from './src/config';
 // https://astro.build/config
 export default defineConfig({
   site: config.site,
-  integrations: [tailwind(), sitemap()]
+  integrations: [tailwind(), sitemap()],
+  build:{
+    assets:{
+      headers:{
+        'Cache-Control': 'public, max-age=31536000, immutable',
+      }
+    }
+  }
 });
