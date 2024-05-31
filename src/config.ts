@@ -5,27 +5,23 @@ export default {
     phone: "9141089348",
     resources: [
         {
-            name: "FAQ",
-            url: "/"
+            name: "QR",
+            url: "/qr"
         },
         {
             "name": "Blog",
-            "url": "/"
+            "url": "/soon"
+        },
+        {
+            "name": "FAQ",
+            "url": "/soon"
         }
     ],
     social: [
         {
             name: "Facebook",
-            url: "https://www.facebook.com/convergenciaweb"
+            url: "/soon"
         },
-        {
-            name: "Instagram",
-            url: "https://www.instagram.com/convergenciaweb"
-        },
-        {
-            name: "Twitter",
-            url: "https://www.twitter.com/convergenciaweb"
-        }
         
     ],
 }
