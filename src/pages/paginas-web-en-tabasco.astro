@@ -1,35 +1,6 @@
 ---
-import Layout from "../layouts/layout.astro";
-import Hero from "../components/hero.astro";
-import Features from "../components/features.astro";
-// import Protfolio from "../components/portfolio.astro";
-import Team from "../components/team.astro";
-import Contact from "../components/contact.astro";
-import Pricing from "../components/pricing.astro";
+import Page from "./index.astro"
 ---
 
-<Layout>
-  <div id="home" />
-  <Hero />
-  <div id="us" class=" bg-white dark:bg-gray-900">
-    <hr class="border-t border-b border-gray-200 dark:border-gray-700 mx-auto max-w-screen-xl" />
-  </div>
-  <Features />
-  <!-- <div id="work" />
-  <Protfolio /> -->
-  <div id="team" />
-  <Team />
-  <div id="pricing" />
-  <Pricing />
-  <div id="contact" />
-  <Contact />
 
-</Layout>
-<style >
-  div {
-    scroll-margin-top: 100px;
-  }
-  html {
-    scroll-behavior: smooth;
-  }
-</style>
+<Page />
