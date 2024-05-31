@@ -12,7 +12,7 @@ import { Image } from "astro:assets";
       alt="Equipo de desarrollo 100% tabasqueño"
       width="343"
       height="377"
-      loading="lazy"
+      loading="eager"
     />
     <div class="text-gray-500 dark:text-gray-400 sm:text-lg">
       <h2
@@ -39,9 +39,9 @@ import { Image } from "astro:assets";
         <div class="grid grid-cols-5">
           <div class="col-span-3 p-3">
             <div class="space-y-2">
-              <h3 class="font-semibold text-gray-900 dark:text-white">
+              <p class="font-semibold text-gray-900 dark:text-white">
                 Sobre la Región Centro
-              </h3>
+              </p>
               <p>
                 Su nombre hace alusión tanto a su ubicación geográfica, en el
                 centro del estado, como a su estatus político, pues es en esta
@@ -52,6 +52,7 @@ import { Image } from "astro:assets";
 
               <a
                 href="https://tabasco.gob.mx/centro"
+                target="_blank"
                 class="flex items-center font-medium text-blue-600 dark:text-blue-500 dark:hover:text-blue-600 hover:text-blue-700 hover:underline"
                 >Centro <svg
                   class="w-2 h-2 ms-1.5 rtl:rotate-180"
@@ -70,6 +71,7 @@ import { Image } from "astro:assets";
               >
               <a
                 href="https://tabasco.gob.mx/nacajuca"
+                target="_blank"
                 class="flex items-center font-medium text-blue-600 dark:text-blue-500 dark:hover:text-blue-600 hover:text-blue-700 hover:underline"
                 >Nacajuca <svg
                   class="w-2 h-2 ms-1.5 rtl:rotate-180"
@@ -82,6 +84,8 @@ import { Image } from "astro:assets";
                 </svg></a
               >
               <a
+                target="_blank"
+                
                 href="https://tabasco.gob.mx/jalpa-de-mendez"
                 class="flex items-center font-medium text-blue-600 dark:text-blue-500 dark:hover:text-blue-600 hover:text-blue-700 hover:underline"
                 >Jalpa de Méndez
@@ -102,7 +106,10 @@ import { Image } from "astro:assets";
               >
             </div>
           </div>
-          <img
+          <Image
+            width={152}
+            height={344}
+            loading={"eager"}
             src="/RegionCentro.png"
             class="h-full col-span-2 object-cover object-[38%]"
             alt="Mapa de la Región Centro"
