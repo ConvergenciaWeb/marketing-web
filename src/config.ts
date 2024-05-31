@@ -1,5 +1,5 @@
 export default {
-    site: import.meta.env.PROD ? "https://convergenciaweb.com/" : "/",
+    site: "https://convergenciaweb.com/",
     name: "Páginas Web Profesionales en Villahermosa y Jalpa de Méndez | Convergencia Web",
     description: "Descubre nuestros servicios de diseño y desarrollo de páginas web en Villahermosa y Jalpa de Méndez. Mejora tu presencia online con Convergencia Web.",
     phone: "9141089348",
