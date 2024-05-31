@@ -6,6 +6,7 @@ import Footer from "../components/footer.astro";
 interface Props {
     title?: string
 }
+import "flowbite"
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -20,8 +21,9 @@ interface Props {
     <link rel="preconnect" href="https://js.hcaptcha.com">
     <link rel="sitemap" href="/sitemap-index.xml" />
 </head>
-<body class="w-screen overflow-x-hidden">
-    <script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js" async defer></script>
+<body >
+    <script>
+    </script>
   <Header />
     
     <slot />
@@ -29,3 +31,8 @@ interface Props {
 
 </body>
 </html>
+
+
+<script>
+  import "flowbite"
+</script>
