@@ -1,12 +1,10 @@
 ---
 import { Image } from "astro:assets";
-
-
 ---
 
 <section class="bg-white dark:bg-gray-900">
   <div
-    class="gap-8  py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 xl:gap-16 sm:py-16 lg:px-6"
+    class="gap-8 py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 xl:gap-16 sm:py-16 lg:px-6"
   >
     <Image
       class="mb-4 w-full lg:mb-0 rounded-lg md:sticky md:top-44"
@@ -23,12 +21,95 @@ import { Image } from "astro:assets";
         Impulsamos Tu Negocio con Diseño Web de Calidad
       </h2>
       <p class="mb-8 font-light lg:text-xl">
-        En ConvergenciaWeb, nos especializamos en crear páginas web profesionales
-        para pequeños negocios consolidados. Nuestro equipo combina habilidades
-        en desarrollo web, diseño de interfaces y estrategia digital para
-        ofrecerte una solución completa que eleve tu marca y conecta con tu
-        audiencia de manera efectiva.
+        En ConvergenciaWeb, nos especializamos en crear páginas web
+        profesionales para pequeños negocios consolidados. Nuestro equipo
+        combina habilidades en desarrollo web, diseño de interfaces y estrategia
+        digital para ofrecerte una solución completa que eleve tu marca y
+        conecta con tu audiencia de manera efectiva, operamos en la región de <span
+          class="text-blue-600 underline dark:text-blue-500 hover:no-underline"
+          data-popover-target="popover-centro">Centro</span
+        >
       </p>
+      <div
+        data-popover
+        id="popover-centro"
+        role="tooltip"
+        class="absolute z-10 invisible inline-block text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 w-96 dark:text-gray-400 dark:bg-gray-800 dark:border-gray-600"
+      >
+        <div class="grid grid-cols-5">
+          <div class="col-span-3 p-3">
+            <div class="space-y-2">
+              <h3 class="font-semibold text-gray-900 dark:text-white">
+                Sobre la Región Centro
+              </h3>
+              <p>
+                Su nombre hace alusión tanto a su ubicación geográfica, en el
+                centro del estado, como a su estatus político, pues es en esta
+                subregión donde se encuentra la capital del estado y la sede de
+                los poderes estatales, la ciudad de Villahermosa.
+              </p>
+              <p>Los municipios que la integran son:</p>
+
+              <a
+                href="https://tabasco.gob.mx/centro"
+                class="flex items-center font-medium text-blue-600 dark:text-blue-500 dark:hover:text-blue-600 hover:text-blue-700 hover:underline"
+                >Centro <svg
+                  class="w-2 h-2 ms-1.5 rtl:rotate-180"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 6 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 9 4-4-4-4"></path>
+                </svg></a
+              >
+              <a
+                href="https://tabasco.gob.mx/nacajuca"
+                class="flex items-center font-medium text-blue-600 dark:text-blue-500 dark:hover:text-blue-600 hover:text-blue-700 hover:underline"
+                >Nacajuca <svg
+                  class="w-2 h-2 ms-1.5 rtl:rotate-180"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg">
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 9 4-4-4-4"></path>
+                </svg></a
+              >
+              <a
+                href="https://tabasco.gob.mx/jalpa-de-mendez"
+                class="flex items-center font-medium text-blue-600 dark:text-blue-500 dark:hover:text-blue-600 hover:text-blue-700 hover:underline"
+                >Jalpa de Méndez
+                <svg
+                  class="w-2 h-2 ms-1.5 rtl:rotate-180"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 6 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 9 4-4-4-4"></path>
+                </svg></a
+              >
+            </div>
+          </div>
+          <img
+            src="/RegionCentro.png"
+            class="h-full col-span-2 object-cover object-[38%]"
+            alt="Mapa de la Región Centro"
+          />
+        </div>
+        <div data-popper-arrow></div>
+      </div>
       <div
         class="py-8 mb-6 border-t border-b border-gray-200 dark:border-gray-700"
       >
@@ -36,10 +117,22 @@ import { Image } from "astro:assets";
           <div
             class="flex justify-center items-center mr-4 w-8 h-8 rounded-full bg-primary-100 dark:bg-primary-900 shrink-0"
           >
-            <svg class="w-5 h-5 text-primary-600 dark:text-primary-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-              <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M7.111 20A3.111 3.111 0 0 1 4 16.889v-12C4 4.398 4.398 4 4.889 4h4.444a.89.89 0 0 1 .89.889v12A3.111 3.111 0 0 1 7.11 20Zm0 0h12a.889.889 0 0 0 .889-.889v-4.444a.889.889 0 0 0-.889-.89h-4.389a.889.889 0 0 0-.62.253l-3.767 3.665a.933.933 0 0 0-.146.185c-.868 1.433-1.581 1.858-3.078 2.12Zm0-3.556h.009m7.933-10.927 3.143 3.143a.889.889 0 0 1 0 1.257l-7.974 7.974v-8.8l3.574-3.574a.889.889 0 0 1 1.257 0Z"/>
+            <svg
+              class="w-5 h-5 text-primary-600 dark:text-primary-300"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-width="2"
+                d="M7.111 20A3.111 3.111 0 0 1 4 16.889v-12C4 4.398 4.398 4 4.889 4h4.444a.89.89 0 0 1 .89.889v12A3.111 3.111 0 0 1 7.11 20Zm0 0h12a.889.889 0 0 0 .889-.889v-4.444a.889.889 0 0 0-.889-.89h-4.389a.889.889 0 0 0-.62.253l-3.767 3.665a.933.933 0 0 0-.146.185c-.868 1.433-1.581 1.858-3.078 2.12Zm0-3.556h.009m7.933-10.927 3.143 3.143a.889.889 0 0 1 0 1.257l-7.974 7.974v-8.8l3.574-3.574a.889.889 0 0 1 1.257 0Z"
+              ></path>
             </svg>
-            
           </div>
           <div>
             <h3 class="mb-2 text-xl font-bold text-gray-900 dark:text-white">
@@ -72,12 +165,21 @@ import { Image } from "astro:assets";
           <div
             class="flex justify-center items-center mr-4 w-8 h-8 bg-purple-100 rounded-full dark:bg-purple-900 shrink-0"
           >
-            <svg class="w-5 h-5 text-purple-600 dark:text-purple-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-              <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"/>
+            <svg
+              class="w-5 h-5 text-purple-600 dark:text-purple-300"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-width="2"
+                d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"></path>
             </svg>
-            
-            
-            
           </div>
           <div>
             <h3 class="mb-2 text-xl font-bold text-gray-900 dark:text-white">
@@ -111,8 +213,22 @@ import { Image } from "astro:assets";
           <div
             class="flex justify-center items-center mr-4 w-8 h-8 bg-teal-100 rounded-full dark:bg-teal-900 shrink-0"
           >
-            <svg class="w-5 h-5 text-teal-600 dark:text-teal-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 15h12M6 6h12m-6 12h.01M7 21h10a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1Z"/>
+            <svg
+              class="w-5 h-5 text-teal-600 dark:text-teal-300"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 15h12M6 6h12m-6 12h.01M7 21h10a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1Z"
+              ></path>
             </svg>
           </div>
           <div>
@@ -140,17 +256,30 @@ import { Image } from "astro:assets";
                   d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
                   clip-rule="evenodd"></path></svg
               >
-          </button>
+            </button>
           </div>
         </div>
         <div class="flex pt-8">
           <div
             class="flex justify-center items-center mr-4 w-8 h-8 bg-indigo-100 rounded-full dark:bg-indigo-900 shrink-0"
           >
-            <svg class="w-5 h-5 text-indigo-600 dark:text-indigo-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.079 6.839a3 3 0 0 0-4.255.1M13 20h1.083A3.916 3.916 0 0 0 18 16.083V9A6 6 0 1 0 6 9v7m7 4v-1a1 1 0 0 0-1-1h-1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1Zm-7-4v-6H5a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h1Zm12-6h1a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2h-1v-6Z"/>
+            <svg
+              class="w-5 h-5 text-indigo-600 dark:text-indigo-300"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M14.079 6.839a3 3 0 0 0-4.255.1M13 20h1.083A3.916 3.916 0 0 0 18 16.083V9A6 6 0 1 0 6 9v7m7 4v-1a1 1 0 0 0-1-1h-1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1Zm-7-4v-6H5a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h1Zm12-6h1a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2h-1v-6Z"
+              ></path>
             </svg>
-            
           </div>
           <div>
             <h3 class="mb-2 text-xl font-bold text-gray-900 dark:text-white">
@@ -192,138 +321,322 @@ import { Image } from "astro:assets";
   </div>
 </section>
 
-
-
 <!-- Modal for Diseño Atractivo y Personalizado -->
-<div id="design-modal" tabindex="-1" aria-hidden="true" class="bg-gray-950/80 hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+<div
+  id="design-modal"
+  tabindex="-1"
+  aria-hidden="true"
+  class="bg-gray-950/80 hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full"
+>
   <div class="relative p-4 w-full max-w-2xl max-h-full">
-      <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-          <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
-              <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
-                  Diseño Atractivo y Personalizado
-              </h3>
-              <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="design-modal">
-                  <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
-                  </svg>
-                  <span class="sr-only">Close modal</span>
-              </button>
-          </div>
-          <div class="p-4 md:p-5 space-y-4 prose">
-              <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                  En ConvergenciaWeb, entendemos la importancia de una primera impresión. Por eso, nos especializamos en crear diseños web únicos y personalizados que no solo capturan la esencia de tu marca, sino que también atraen y retienen la atención de tus clientes. Nuestro proceso de diseño incluye:
-              </p>
-              <ul class="list-disc list-inside text-gray-500 dark:text-gray-400">
-                  <li>Análisis de Marca: Estudiamos tu marca para entender su identidad y valores.</li>
-                  <li>Diseño Creativo: Producimos conceptos de diseño innovadores y estéticamente agradables.</li>
-                  <li>Iteración y Feedback: Trabajamos estrechamente contigo para refinar el diseño basado en tus comentarios.</li>
-                  <li>Implementación Detallada: Aseguramos que cada detalle esté perfectamente ejecutado para una experiencia visual impactante.</li>
-              </ul>
-          </div>
-          <div class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
-              <button data-modal-hide="design-modal" type="button" class="text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-blue-800">Cerrar</button>
-          </div>
+    <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+      <div
+        class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600"
+      >
+        <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+          Diseño Atractivo y Personalizado
+        </h3>
+        <button
+          type="button"
+          class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+          data-modal-hide="design-modal"
+        >
+          <svg
+            class="w-3 h-3"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 14 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"></path>
+          </svg>
+          <span class="sr-only">Close modal</span>
+        </button>
       </div>
+      <div class="p-4 md:p-5 space-y-4 prose">
+        <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+          En ConvergenciaWeb, entendemos la importancia de una primera
+          impresión. Por eso, nos especializamos en crear diseños web únicos y
+          personalizados que no solo capturan la esencia de tu marca, sino que
+          también atraen y retienen la atención de tus clientes. Nuestro proceso
+          de diseño incluye:
+        </p>
+        <ul class="list-disc list-inside text-gray-500 dark:text-gray-400">
+          <li>
+            Análisis de Marca: Estudiamos tu marca para entender su identidad y
+            valores.
+          </li>
+          <li>
+            Diseño Creativo: Producimos conceptos de diseño innovadores y
+            estéticamente agradables.
+          </li>
+          <li>
+            Iteración y Feedback: Trabajamos estrechamente contigo para refinar
+            el diseño basado en tus comentarios.
+          </li>
+          <li>
+            Implementación Detallada: Aseguramos que cada detalle esté
+            perfectamente ejecutado para una experiencia visual impactante.
+          </li>
+        </ul>
+      </div>
+      <div
+        class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600"
+      >
+        <button
+          data-modal-hide="design-modal"
+          type="button"
+          class="text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-blue-800"
+          >Cerrar</button
+        >
+      </div>
+    </div>
   </div>
 </div>
 
 <!-- Modal for Optimización para Motores de Búsqueda (SEO) -->
-<div id="seo-modal" tabindex="-1" aria-hidden="true" class="hidden bg-gray-950/80 overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+<div
+  id="seo-modal"
+  tabindex="-1"
+  aria-hidden="true"
+  class="hidden bg-gray-950/80 overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full"
+>
   <div class="relative p-4 w-full max-w-2xl max-h-full">
-      <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-          <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
-              <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
-                  Optimización para Motores de Búsqueda (SEO)
-              </h3>
-              <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="seo-modal">
-                  <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
-                  </svg>
-                  <span class="sr-only">Close modal</span>
-              </button>
-          </div>
-          <div class="p-4 md:p-5 space-y-4 prose">
-              <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                  Nuestro enfoque en SEO garantiza que tu sitio web sea fácilmente encontrado por clientes potenciales en Google y otros buscadores. Aquí está cómo lo hacemos:
-              </p>
-              <ul class="list-disc list-inside text-gray-500 dark:text-gray-400">
-                  <li>Investigación de Palabras Clave: Identificamos las palabras clave más relevantes para tu negocio.</li>
-                  <li>Optimización On-Page: Mejoramos el contenido, las metaetiquetas y la estructura del sitio para maximizar la visibilidad.</li>
-                  <li>SEO Técnico: Aseguramos que tu sitio web cumpla con las mejores prácticas de SEO técnico, como la velocidad de carga y la estructura de URL.</li>
-                  <li>Estrategias de Link Building: Implementamos técnicas para obtener enlaces de calidad que apunten a tu sitio web.</li>
-                  <li>Monitoreo y Ajustes: Analizamos el rendimiento y realizamos ajustes continuos para mejorar los resultados de búsqueda.</li>
-              </ul>
-          </div>
-          <div class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
-              <button data-modal-hide="seo-modal" type="button" class="text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-blue-800">Cerrar</button>
-          </div>
+    <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+      <div
+        class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600"
+      >
+        <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+          Optimización para Motores de Búsqueda (SEO)
+        </h3>
+        <button
+          type="button"
+          class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+          data-modal-hide="seo-modal"
+        >
+          <svg
+            class="w-3 h-3"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 14 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"></path>
+          </svg>
+          <span class="sr-only">Close modal</span>
+        </button>
       </div>
+      <div class="p-4 md:p-5 space-y-4 prose">
+        <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+          Nuestro enfoque en SEO garantiza que tu sitio web sea fácilmente
+          encontrado por clientes potenciales en Google y otros buscadores. Aquí
+          está cómo lo hacemos:
+        </p>
+        <ul class="list-disc list-inside text-gray-500 dark:text-gray-400">
+          <li>
+            Investigación de Palabras Clave: Identificamos las palabras clave
+            más relevantes para tu negocio.
+          </li>
+          <li>
+            Optimización On-Page: Mejoramos el contenido, las metaetiquetas y la
+            estructura del sitio para maximizar la visibilidad.
+          </li>
+          <li>
+            SEO Técnico: Aseguramos que tu sitio web cumpla con las mejores
+            prácticas de SEO técnico, como la velocidad de carga y la estructura
+            de URL.
+          </li>
+          <li>
+            Estrategias de Link Building: Implementamos técnicas para obtener
+            enlaces de calidad que apunten a tu sitio web.
+          </li>
+          <li>
+            Monitoreo y Ajustes: Analizamos el rendimiento y realizamos ajustes
+            continuos para mejorar los resultados de búsqueda.
+          </li>
+        </ul>
+      </div>
+      <div
+        class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600"
+      >
+        <button
+          data-modal-hide="seo-modal"
+          type="button"
+          class="text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-blue-800"
+          >Cerrar</button
+        >
+      </div>
+    </div>
   </div>
 </div>
 
 <!-- Modal for Responsive y Móvil-Amigable -->
-<div id="responsive-modal" tabindex="-1" aria-hidden="true" class="bg-gray-950/80 hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+<div
+  id="responsive-modal"
+  tabindex="-1"
+  aria-hidden="true"
+  class="bg-gray-950/80 hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full"
+>
   <div class="relative p-4 w-full max-w-2xl max-h-full">
-      <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-          <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
-              <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
-                  Responsive y Móvil-Amigable
-              </h3>
-              <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="responsive-modal">
-                  <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
-                  </svg>
-                  <span class="sr-only">Close modal</span>
-              </button>
-          </div>
-          <div class="p-4 md:p-5 space-y-4 prose">
-              <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                  En el mundo actual, es crucial que tu sitio web se vea y funcione perfectamente en todos los dispositivos. Nuestras páginas web están diseñadas para ser totalmente responsivas, lo que significa que se adaptan automáticamente a cualquier tamaño de pantalla, desde computadoras de escritorio hasta smartphones y tablets. Lo que ofrecemos:
-              </p>
-              <ul class="list-disc list-inside text-gray-500 dark:text-gray-400">
-                  <li>Diseño Adaptativo: Aseguramos que tu sitio web sea visualmente atractivo y funcional en cualquier dispositivo.</li>
-                  <li>Pruebas de Compatibilidad: Realizamos pruebas exhaustivas en múltiples dispositivos y navegadores para garantizar una experiencia uniforme.</li>
-                  <li>Optimización de Carga: Optimizamos imágenes y recursos para tiempos de carga rápidos en dispositivos móviles.</li>
-                  <li>Mejora de Usabilidad: Diseñamos interfaces intuitivas y fáciles de usar, mejorando la experiencia del usuario en móviles.</li>
-              </ul>
-          </div>
-          <div class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
-              <button data-modal-hide="responsive-modal" type="button" class="text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-blue-800">Cerrar</button>
-          </div>
+    <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+      <div
+        class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600"
+      >
+        <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+          Responsive y Móvil-Amigable
+        </h3>
+        <button
+          type="button"
+          class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+          data-modal-hide="responsive-modal"
+        >
+          <svg
+            class="w-3 h-3"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 14 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"></path>
+          </svg>
+          <span class="sr-only">Close modal</span>
+        </button>
       </div>
+      <div class="p-4 md:p-5 space-y-4 prose">
+        <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+          En el mundo actual, es crucial que tu sitio web se vea y funcione
+          perfectamente en todos los dispositivos. Nuestras páginas web están
+          diseñadas para ser totalmente responsivas, lo que significa que se
+          adaptan automáticamente a cualquier tamaño de pantalla, desde
+          computadoras de escritorio hasta smartphones y tablets. Lo que
+          ofrecemos:
+        </p>
+        <ul class="list-disc list-inside text-gray-500 dark:text-gray-400">
+          <li>
+            Diseño Adaptativo: Aseguramos que tu sitio web sea visualmente
+            atractivo y funcional en cualquier dispositivo.
+          </li>
+          <li>
+            Pruebas de Compatibilidad: Realizamos pruebas exhaustivas en
+            múltiples dispositivos y navegadores para garantizar una experiencia
+            uniforme.
+          </li>
+          <li>
+            Optimización de Carga: Optimizamos imágenes y recursos para tiempos
+            de carga rápidos en dispositivos móviles.
+          </li>
+          <li>
+            Mejora de Usabilidad: Diseñamos interfaces intuitivas y fáciles de
+            usar, mejorando la experiencia del usuario en móviles.
+          </li>
+        </ul>
+      </div>
+      <div
+        class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600"
+      >
+        <button
+          data-modal-hide="responsive-modal"
+          type="button"
+          class="text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-blue-800"
+          >Cerrar</button
+        >
+      </div>
+    </div>
   </div>
 </div>
 
 <!-- Modal for Soporte y Mantenimiento Continuo -->
-<div id="support-modal" tabindex="-1" aria-hidden="true" class="bg-gray-950/80 hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+<div
+  id="support-modal"
+  tabindex="-1"
+  aria-hidden="true"
+  class="bg-gray-950/80 hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full"
+>
   <div class="relative p-4 w-full max-w-2xl max-h-full">
-      <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-          <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
-              <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
-                  Soporte y Mantenimiento Continuo
-              </h3>
-              <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="support-modal">
-                  <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
-                  </svg>
-                  <span class="sr-only">Close modal</span>
-              </button>
-          </div>
-          <div class="p-4 md:p-5 space-y-4 prose">
-              <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                  Nos comprometemos a mantener tu sitio web funcionando sin problemas y siempre actualizado. Nuestro servicio de soporte y mantenimiento continuo incluye:
-              </p>
-              <ul class="list-disc list-inside text-gray-500 dark:text-gray-400">
-                  <li>Actualizaciones Regulares: Instalación de actualizaciones de software y parches de seguridad para mantener tu sitio protegido.</li>
-                  <li>Monitorización Activa: Supervisión constante del rendimiento del sitio para identificar y resolver problemas rápidamente.</li>
-                  <li>Backups Programados: Realización de copias de seguridad periódicas para proteger tus datos y facilitar la recuperación en caso de fallos.</li>
-                  <li>Asistencia Técnica: Disponibilidad de soporte técnico para resolver cualquier inconveniente que puedas tener.</li>
-                  <li>Mejoras Continuas: Implementación de mejoras basadas en nuevas tendencias y tecnologías para mantener tu sitio competitivo.</li>
-              </ul>
-          </div>
-          <div class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
-              <button data-modal-hide="support-modal" type="button" class="text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-blue-800">Cerrar</button>
-          </div>
+    <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+      <div
+        class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600"
+      >
+        <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+          Soporte y Mantenimiento Continuo
+        </h3>
+        <button
+          type="button"
+          class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+          data-modal-hide="support-modal"
+        >
+          <svg
+            class="w-3 h-3"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 14 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"></path>
+          </svg>
+          <span class="sr-only">Close modal</span>
+        </button>
       </div>
+      <div class="p-4 md:p-5 space-y-4 prose">
+        <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+          Nos comprometemos a mantener tu sitio web funcionando sin problemas y
+          siempre actualizado. Nuestro servicio de soporte y mantenimiento
+          continuo incluye:
+        </p>
+        <ul class="list-disc list-inside text-gray-500 dark:text-gray-400">
+          <li>
+            Actualizaciones Regulares: Instalación de actualizaciones de
+            software y parches de seguridad para mantener tu sitio protegido.
+          </li>
+          <li>
+            Monitorización Activa: Supervisión constante del rendimiento del
+            sitio para identificar y resolver problemas rápidamente.
+          </li>
+          <li>
+            Backups Programados: Realización de copias de seguridad periódicas
+            para proteger tus datos y facilitar la recuperación en caso de
+            fallos.
+          </li>
+          <li>
+            Asistencia Técnica: Disponibilidad de soporte técnico para resolver
+            cualquier inconveniente que puedas tener.
+          </li>
+          <li>
+            Mejoras Continuas: Implementación de mejoras basadas en nuevas
+            tendencias y tecnologías para mantener tu sitio competitivo.
+          </li>
+        </ul>
+      </div>
+      <div
+        class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600"
+      >
+        <button
+          data-modal-hide="support-modal"
+          type="button"
+          class="text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-blue-800"
+          >Cerrar</button
+        >
+      </div>
+    </div>
   </div>
 </div>
