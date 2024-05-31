@@ -1,4 +1,6 @@
 ---
+import { Image } from "astro:assets";
+
 
 ---
 
@@ -43,11 +45,13 @@
       </a>
     </div>
     <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
-      <img
+      <Image
+      height={416}
+      width={570}
       class="object-cover w-full h-full antialiased rounded-lg rotate-6"
         src="/responsive-example.webp"
-        alt="mockup"
-        loading="lazy"
+        alt="Diseño de páginas web en Villahermosa"
+        loading="eager"
       />
     </div>
   </div>

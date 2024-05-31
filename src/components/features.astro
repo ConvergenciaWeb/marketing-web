@@ -1,4 +1,6 @@
 ---
+import { Image } from "astro:assets";
+
 
 ---
 
@@ -6,12 +8,13 @@
   <div
     class="gap-8  py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 xl:gap-16 sm:py-16 lg:px-6"
   >
-    <img
+    <Image
       class="mb-4 w-full lg:mb-0 rounded-lg md:sticky md:top-44"
       src="/feature-office-long.webp"
-      alt="feature image"
+      alt="Equipo de desarrollo 100% tabasqueño"
       width="343"
       height="377"
+      loading="lazy"
     />
     <div class="text-gray-500 dark:text-gray-400 sm:text-lg">
       <h2

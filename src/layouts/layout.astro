@@ -6,15 +6,14 @@ import Footer from "../components/footer.astro";
 interface Props {
     title?: string
 }
-const {title} = Astro.props
 ---
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{config.name}{title && `- ${title}`}</title>
-    <meta name="description" content="ConvergenciaWeb ofrece servicios de diseño web atractivo y personalizado, optimización SEO, desarrollo responsive y móvil-amigable, y soporte y mantenimiento continuo. Transformamos tu presencia en línea con soluciones innovadoras y efectivas.">
+    <title>{config.name}</title>
+    <meta name="description" content={config.description}>
     <link rel="icon" href="/favicon.svg" type="image/x-icon">
     <!-- preconects -->
     <link rel="preconnect" href="https://newassets.hcaptcha.com">
