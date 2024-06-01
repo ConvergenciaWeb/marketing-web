@@ -41,7 +41,7 @@ Tu página web trabaja para ti las 24 horas del día, los 7 días de la semana. 
 
 Y no, no estamos diciendo que abandones las redes sociales. Todo lo contrario, tu página web y tus redes sociales deben trabajar de la mano. Puedes integrar tus perfiles de redes en tu página web, y desde tus redes puedes dirigir a los usuarios a tu página para que obtengan más información, hagan compras o se suscriban a tu boletín. Es una estrategia de marketing completa y más efectiva. En ConvergenciaWeb, hacemos que tus redes y tu sitio web trabajen en perfecta armonía.
 
-### Por último
+### Da el siguiente paso
 
 Así que ya sabes, amigo tabasqueño. No te quedes solo con las redes sociales. Dale a tu PyMe el impulso que necesita con una página web. No solo mejorarás tu imagen y credibilidad, sino que también abrirás nuevas oportunidades para atraer clientes y crecer tu negocio. ¡Anímate a dar el siguiente paso y verás los resultados! En ConvergenciaWeb estamos aquí para ayudarte a diseñar, construir y desplegar el sitio web perfecto para tu negocio.
 
