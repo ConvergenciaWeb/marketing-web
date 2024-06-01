@@ -13,11 +13,15 @@ const posts = allPosts.slice(-3).reverse();
       <header class="py-12">
         <div class="px-4 mx-auto w-full max-w-screen-xl text-center">
           <span class="block mb-4 font-semibold text-gray-900 dark:text-white"
-            >Publicado el <time
+            >Publicado <time
               class="font-normal text-gray-500 dark:text-gray-400"
               class="uppercase"
               datetime="{frontmatter.pubDate}"
-              title={new Date(frontmatter.pubDate as Date).toLocaleDateString()}>{new Date(frontmatter.pubDate as Date).toLocaleDateString()}</time
+              title={new Date(frontmatter.pubDate as Date).toLocaleString("es")}>
+              <relative-time datetime={frontmatter.pubDate} lang="es">
+                {new Date(frontmatter.pubDate as Date).toLocaleString("es")}
+              </relative-time>
+              </time
             ></span
           >
           <h1
@@ -225,3 +229,8 @@ const posts = allPosts.slice(-3).reverse();
 
 
 </Layout>
+
+
+<script>
+  import "@github/relative-time-element"
+</script>

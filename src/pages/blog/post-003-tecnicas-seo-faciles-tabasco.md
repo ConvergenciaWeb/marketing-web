@@ -2,9 +2,8 @@
 
 layout: "../../layouts/markdown-post-layout.astro"
 title: "Cómo hacer que tu negocio en Tabasco brille en Google: Técnicas de SEO fáciles de entender"
-pubDate: 05-31-2024
+pubDate: 2024-05-31T18:30:00-06:00
 description: "Descubre técnicas de SEO sencillas y prácticas para que tu negocio en Tabasco aparezca en los primeros resultados de Google. Aprende con ConvergenciaWeb cómo atraer más clientes y mejorar tu presencia en línea sin complicaciones técnicas."
-
 author: 'Edgar Ulises Sánchez Izquierdo'
 image:
     url: '/oficinas-google.webp'

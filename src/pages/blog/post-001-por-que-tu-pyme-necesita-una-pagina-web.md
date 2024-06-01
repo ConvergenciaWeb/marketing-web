@@ -1,7 +1,7 @@
 ---
 layout: "../../layouts/markdown-post-layout.astro"
 title: '¿Por qué tu PyMe necesita una página web y no solo redes sociales?'
-pubDate: 05-31-2024
+pubDate: 2024-05-31T14:30:00-06:00
 description: 'Descubre por qué tu PyMe necesita una página web y no solo redes sociales. En ConvergenciaWeb, te explicamos cómo una página web profesional mejora tu imagen, aumenta tu visibilidad en Google y genera mayor confianza en tus clientes. ¡Conoce los beneficios y da el siguiente paso para hacer crecer tu negocio!'
 author: 'Edgar Ulises Sánchez Izquierdo'
 image:
