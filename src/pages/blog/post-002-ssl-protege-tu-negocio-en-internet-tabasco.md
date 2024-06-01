@@ -18,9 +18,7 @@ tags: [
   "región centro Tabasco",
   "Nacajuca",
   "Jalpa de Méndez",
-  "Cunduacán",
   "Centro",
-  "Paraíso"
 ]
 ---
 
