@@ -6,8 +6,9 @@ import "flowbite"
 
 interface Props {
     title?: string
+    description?: string
 }
-const {title = config.name} = Astro.props
+const {title = config.name, description = config.description} = Astro.props
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -15,7 +16,7 @@ const {title = config.name} = Astro.props
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{title}</title>
-    <meta name="description" content={config.description}>
+    <meta name="description" content={description}>
     <link rel="icon" href="/favicon.svg" type="image/x-icon">
     <!-- preconects -->
     <link rel="preconnect" href="https://newassets.hcaptcha.com">
