@@ -20,7 +20,7 @@ export default {
     social: [
         {
             name: "Facebook",
-            url: "https://www.facebook.com/convergenciaweb.2024"
+            url: "https://www.facebook.com/people/ConvergenciaWeb/61560199089942/"
         },
         {
             name: "Instagram",
