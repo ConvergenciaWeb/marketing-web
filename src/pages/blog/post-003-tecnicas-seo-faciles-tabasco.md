@@ -13,8 +13,6 @@ tags: ["SEO", "Tabasco", "Negocios en Tabasco", "Pymes", "Marketing Digital", "O
 
 ---
 
-## Cómo hacer que tu negocio en Tabasco brille en Google: Técnicas de SEO fáciles de entender
-
 ¡Hola a todos! Si eres dueño de un negocio en Tabasco y quieres que más personas te encuentren en Google, estás en el lugar correcto. Hoy vamos a platicar de una cosa muy importante que se llama SEO. No te preocupes si no sabes qué es, aquí te lo explicamos fácil y claro.
 
 ### ¿Qué es el SEO y por qué importa?
