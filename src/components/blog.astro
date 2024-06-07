@@ -52,9 +52,9 @@ if (otherPosts[0]) {
                   alt={lastPost.frontmatter.image.alt}
                 />
               </a>
-              <h4 class="my-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+              <h3 class="my-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                 <a href={lastPost.url}>{lastPost.frontmatter.title}</a>
-              </h4>
+              </h3>
               <p class="mb-4 font-light text-gray-500 dark:text-gray-400 text-pretty">
                 {lastPost.frontmatter.description}
               </p>
@@ -86,9 +86,9 @@ if (otherPosts[0]) {
             if (post === undefined) return;
             return (
               <article>
-                <h4 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                <h3 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                   <a href={post.url}>{post.frontmatter.title}</a>
-                </h4>
+                </h3>
                 <p class="mb-4 font-light text-gray-500 dark:text-gray-400 text-pretty">
                   {truncate(post.frontmatter.description, 100)}
                 </p>
@@ -121,9 +121,9 @@ if (otherPosts[0]) {
             if (post === undefined) return;
             return (
               <article>
-                <h4 class="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">
+                <h3 class="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">
                   <a href={post.url}>{post.frontmatter.title}</a>
-                </h4>
+                </h3>
                 <a
                   href={post.url}
                   class="inline-flex items-center font-medium text-primary-600 hover:underline dark:text-primary-500"
