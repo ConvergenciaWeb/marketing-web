@@ -10,29 +10,21 @@ import Pricing from "../components/pricing.astro";
 ---
 
 <Layout>
-  <div id="home" />
+  <div id="home" class="scroll-mt-24"/>
   <Hero />
-  <div id="us" class=" bg-white dark:bg-gray-900">
+  <div id="us" class=" bg-white dark:bg-gray-900 scroll-m-24">
     <hr class="border-t border-b border-gray-200 dark:border-gray-700 mx-auto max-w-screen-xl" />
   </div>
   <Features />
-  <!-- <div id="work" />
+  <!-- <div id="work" class="scroll-mt-24"/>
   <Protfolio /> -->
-  <div id="team" />
+  <div id="team" class="scroll-mt-24"/>
   <Team />
-  <div id="pricing" />
+  <div id="pricing" class="scroll-mt-24" />
   <Pricing />
-  <div id="blog" />
+  <div id="blog" class="scroll-mt-24"/>
   <Blog />
-  <div id="contact" />
+  <div id="contact" class="scroll-mt-24"/>
   <Contact />
 
 </Layout>
-<style >
-  div {
-    scroll-margin-top: 100px;
-  }
-  html {
-    scroll-behavior: smooth;
-  }
-</style>
