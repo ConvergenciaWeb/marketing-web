@@ -3,6 +3,7 @@ import { Image } from "astro:assets";
 import ShareSocialMedia from "../components/share-social-media.astro";
 import { readingTime, truncate } from "../utils";
 import Layout from "./layout.astro";
+import config from "../config";
 const { frontmatter } = Astro.props;
 const allPosts = await Astro.glob("../pages/blog/**/*.md");
 const posts = allPosts.slice(-3).reverse();
@@ -11,8 +12,8 @@ const posts = allPosts.slice(-3).reverse();
 <Layout
   title={`${frontmatter.title} | ConvergenciaWeb`}
   description={frontmatter.description}
-  og={frontmatter.image.url}
-  link={frontmatter.url}
+  og={config.site + frontmatter.image.url}
+  link={config.site + frontmatter.url}
 >
   <main class="pb-16 lg:pb-24 bg-white dark:bg-gray-900 antialiased">
     <header class="py-12">
