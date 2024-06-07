@@ -15,7 +15,8 @@ import Icon from "./icon.astro";
           >
         </a>
       </div>
-      <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+      <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-4">
+        
         <div>
           <p
             class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
@@ -75,7 +76,13 @@ import Icon from "./icon.astro";
     <div class="sm:flex sm:items-center sm:justify-between">
       <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
         >© 2024 <a href={config.site} class="hover:underline">{config.name}</a
-        >.
+        >. | 
+        <a href={`tel:${config.phone}`} class="hover:underline">
+          +52 {config.phone}
+        </a> | 
+        <a href={`mailto:convergenciaweb@trongar.site`} class="hover:underline">
+          convergenciaweb@trongar.site
+        </a>
       </span>
     </div>
   </div>
