@@ -1,5 +1,6 @@
 export default {
-  site: "https://convergenciaweb.com/paginas-web-en-tabasco",
+  site: "https://convergenciaweb.com",
+  base: "/paginas-web-en-tabasco",
   name: "Convergencia Web | Paginas Web Profesionales en Tabasco",
   description:
     "Descubre nuestros servicios de diseño y desarrollo de paginas web en Villahermosa, Nacajuca y Jalpa de Méndez. Mejora tu presencia online con Convergencia Web.",
