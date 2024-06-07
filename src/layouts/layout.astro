@@ -1,40 +1,50 @@
 ---
-import config from "../config"
+import config from "../config";
 import Header from "../components/header.astro";
 import Footer from "../components/footer.astro";
-import "flowbite"
+import "flowbite";
 
 interface Props {
-    title?: string
-    description?: string
-}
-const {title = config.name, description = config.description} = Astro.props
----
-<!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{title}</title>
-    <meta name="description" content={description}>
-    <link rel="icon" href="/favicon.svg" type="image/x-icon">
-    <!-- preconects -->
-    <link rel="preconnect" href="https://newassets.hcaptcha.com">
-    <link rel="preconnect" href="https://js.hcaptcha.com">
-    <link rel="sitemap" href="/sitemap-index.xml" />
-</head>
-<body >
-    <script>
-    </script>
-  <Header />
-    
-    <slot />
-  <Footer />
+  title?: string;
+  description?: string;
+  og?: string;
+  link?: string;
 
-</body>
+}
+const { title = config.name, description = config.description, og = config.og,  link = config.site } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Open graphs -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={og} />
+    <meta property="og:url" content={link} />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:url" content={og} />
+    <meta name="twitter:card" content={description} />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="icon" href="/favicon.svg" type="image/x-icon" />
+    <!-- preconects -->
+    <link rel="preconnect" href="https://newassets.hcaptcha.com" />
+    <link rel="preconnect" href="https://js.hcaptcha.com" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+  </head>
+  <body>
+    <script></script>
+    <Header />
+
+    <slot />
+    <Footer />
+  </body>
 </html>
 
-
 <script>
-  import "flowbite"
+  import "flowbite";
 </script>
