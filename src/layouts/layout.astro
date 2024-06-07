@@ -9,13 +9,17 @@ interface Props {
   description?: string;
   og?: string;
   link?: string;
-
 }
-const { title = config.name, description = config.description, og =config.site + config.og,  link = config.site } = Astro.props;
+const {
+  title = config.name,
+  description = config.description,
+  og = config.site + config.og,
+  link = config.site,
+} = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en" class="scroll-smooth">
+<html lang="es" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -39,22 +43,22 @@ const { title = config.name, description = config.description, og =config.site +
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "ConvergenciaWeb",
-        "image": "http://convergenciaweb.com/logo.webp", 
+        "image": "http://convergenciaweb.com/logo.webp",
         "url": "http://convergenciaweb.com/paginas-web-en-tabasco",
         "telephone": "+52-961-864-1247",
-        // "address": {
-        //   "@type": "PostalAddress",
-        //   "streetAddress": "Calle de Ejemplo 123",
-        //   "addressLocality": "Villahermosa",
-        //   "addressRegion": "Tabasco",
-        //   "postalCode": "86000",
-        //   "addressCountry": "MX"
-        // },
-        // "geo": {
-        //   "@type": "GeoCoordinates",
-        //   "latitude": 17.9869,
-        //   "longitude": -92.9303
-        // },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "435 Prol. Emilio Carranza, Villahermosa, Tabasco",
+          "addressLocality": "Villahermosa",
+          "addressRegion": "Tabasco",
+          "postalCode": "86000",
+          "addressCountry": "MX"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 17.9886032,
+          "longitude": -92.9560652,
+        },
         "sameAs": [
           "https://www.facebook.com/people/ConvergenciaWeb/61560199089942/",
           "https://www.instagram.com/convergencia.web/"
@@ -75,11 +79,11 @@ const { title = config.name, description = config.description, og =config.site +
           }
         }
       }
-      </script>
-      
+    </script>
+
     <link rel="icon" href="/favicon.svg" type="image/x-icon" />
-    <link rel="icon" href="/favicon.ico"/>
-    <link rel="shortcut icon" href="/favicon.ico"/>
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="shortcut icon" href="/favicon.ico" />
     <!-- preconects -->
     <link rel="preconnect" href="https://newassets.hcaptcha.com" />
     <link rel="preconnect" href="https://js.hcaptcha.com" />
