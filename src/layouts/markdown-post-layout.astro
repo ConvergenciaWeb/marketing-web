@@ -58,6 +58,7 @@ const posts = allPosts.slice(-3).reverse();
           <span
             class="text-base mb-4 lg:mb-0 font-normal text-gray-500 dark:text-gray-400"
             >Por <a
+            title="pagina del autor"
               href="https://trongar.site"
               rel="noopener"
               target="_blank"
@@ -112,6 +113,7 @@ const posts = allPosts.slice(-3).reverse();
               >
                 <li>
                   <a
+                  title="reportar problema"
                     href="/soon"
                     class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                     >Reportar problema</a
@@ -119,6 +121,7 @@ const posts = allPosts.slice(-3).reverse();
                 </li>
                 <li>
                   <a
+                  title="enviar sugerencia"
                     href="/soon"
                     class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                     >Enviar sugerencia</a
@@ -150,6 +153,7 @@ const posts = allPosts.slice(-3).reverse();
                     {truncate(post.frontmatter.description, 75)}
                   </p>
                   <a
+                    title="ver post"
                     href={post.url}
                     class="inline-flex items-center font-medium underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline"
                   >
@@ -201,7 +205,7 @@ const posts = allPosts.slice(-3).reverse();
       {
         posts.map((post) => (
           <article class="flex mb-8">
-            <a href={post.url} class="shrink-0">
+            <a title="ver post" href={post.url} class="shrink-0">
               <Image
                 src={post.frontmatter.image.url}
                 width="128"
@@ -212,12 +216,13 @@ const posts = allPosts.slice(-3).reverse();
             </a>
             <div class="flex flex-col justify-center">
               <h2 class="mb-2 text-xl font-bold leading-tight text-gray-900 dark:text-white">
-                <a href={post.url}>{post.frontmatter.title}</a>
+                <a title="ver post" href={post.url}>{post.frontmatter.title}</a>
               </h2>
               <p class="mb-2 text-gray-500 dark:text-gray-400">
                 {truncate(post.frontmatter.description, 200)}
               </p>
               <a
+              title="ver post"
                 href={post.url}
                 class="inline-flex items-center font-medium underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline"
               >

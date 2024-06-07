@@ -33,7 +33,7 @@ if (otherPosts[0]) {
       <p
         class="mb-8 lg:mb-16 font-light text-gray-500 dark:text-gray-400 sm:text-xl"
       >
-        Nuestro blog con noticias, tendencias y consejos en páginas web.
+        Nuestro blog con noticias, tendencias y consejos en paginas web.
       </p>
     </div>
     <div
@@ -43,7 +43,7 @@ if (otherPosts[0]) {
         {
           lastPost && (
             <article>
-              <a href={lastPost.url}>
+              <a title="ver post" href={lastPost.url}>
                 <Image
                     width={384}
                     height={216}
@@ -53,12 +53,13 @@ if (otherPosts[0]) {
                 />
               </a>
               <h3 class="my-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                <a href={lastPost.url}>{lastPost.frontmatter.title}</a>
+                <a title="ver post" href={lastPost.url}>{lastPost.frontmatter.title}</a>
               </h3>
               <p class="mb-4 font-light text-gray-500 dark:text-gray-400 text-pretty">
                 {lastPost.frontmatter.description}
               </p>
               <a
+              title="ver post"
                 href={lastPost.url}
                 class="inline-flex items-center font-medium text-primary-600 hover:underline dark:text-primary-500"
               >
@@ -87,12 +88,13 @@ if (otherPosts[0]) {
             return (
               <article>
                 <h3 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                  <a href={post.url}>{post.frontmatter.title}</a>
+                  <a title="ver post" href={post.url}>{post.frontmatter.title}</a>
                 </h3>
                 <p class="mb-4 font-light text-gray-500 dark:text-gray-400 text-pretty">
                   {truncate(post.frontmatter.description, 100)}
                 </p>
                 <a
+                title="ver post"
                   href={post.url}
                   class="inline-flex items-center font-medium text-primary-600 hover:underline dark:text-primary-500"
                 >
@@ -122,9 +124,10 @@ if (otherPosts[0]) {
             return (
               <article>
                 <h3 class="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">
-                  <a href={post.url}>{post.frontmatter.title}</a>
+                  <a title="ver post" href={post.url}>{post.frontmatter.title}</a>
                 </h3>
                 <a
+                title="ver post"
                   href={post.url}
                   class="inline-flex items-center font-medium text-primary-600 hover:underline dark:text-primary-500"
                 >

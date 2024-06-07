@@ -14,7 +14,7 @@ No recopilamos información personal directamente de los usuarios de nuestra lan
 - Dirección IP (anonimizada)
 - Tipo de navegador y configuración del idioma
 - Sistema operativo
-- Páginas visitadas y tiempo de permanencia en el sitio
+- Paginas visitadas y tiempo de permanencia en el sitio
 - Fecha y hora de acceso
 
 ### b. Cookies
@@ -39,4 +39,4 @@ Nuestra landing page puede contener enlaces a otros sitios web que no son operad
 
 ## 5. Cambios en Esta Política de Privacidad
 
-Nos reservamos el derecho de actualizar nuestra Política de Privacidad en cualquier momento. Te notificaremos sobre cualquier cambio publicando la nueva política en esta página. Los cambios serán efectivos inmediatamente después de su publicación en nuestro sitio web.
+Nos reservamos el derecho de actualizar nuestra Política de Privacidad en cualquier momento. Te notificaremos sobre cualquier cambio publicando la nueva política en esta pagina. Los cambios serán efectivos inmediatamente después de su publicación en nuestro sitio web.

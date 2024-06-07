@@ -7,7 +7,7 @@ import Icon from "./icon.astro";
   <div class="mx-auto max-w-screen-xl">
     <div class="md:flex md:justify-between">
       <div class="mb-6 md:mb-0">
-        <a href={config.site} class="flex items-center">
+        <a title="ir a inicio" href={config.site} class="flex items-center">
           <Icon />
           <span
             class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
@@ -27,7 +27,7 @@ import Icon from "./icon.astro";
             {
               config.resources.map((resource) => (
                 <li class="mb-4">
-                  <a href={resource.url} class="hover:underline">
+                  <a title={`ir a ${resource.name}`} href={resource.url} class="hover:underline">
                     {resource.name}
                   </a>
                 </li>
@@ -45,7 +45,7 @@ import Icon from "./icon.astro";
             {
               config.social.map((red) => (
                 <li class="mb-4">
-                  <a href={red.url} class="hover:underline">
+                  <a title={`ver pagina de ${red.name}`}  href={red.url} class="hover:underline">
                     {red.name}
                   </a>
                 </li>
@@ -61,10 +61,10 @@ import Icon from "./icon.astro";
           </p>
           <ul class="text-gray-600 dark:text-gray-400">
             <li class="mb-4">
-              <a href="/pdp" class="hover:underline">Políticas de privacidad</a>
+              <a title="ver políticas de privacidad" href="/pdp" class="hover:underline">Políticas de privacidad</a>
             </li>
             <li>
-              <a href="/tyc" class="hover:underline"
+              <a title="ver términos y condiciones" href="/tyc" class="hover:underline"
                 >Términos &amp; Condiciones</a
               >
             </li>
@@ -75,12 +75,12 @@ import Icon from "./icon.astro";
     <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
     <div class="sm:flex sm:items-center sm:justify-between">
       <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
-        >© 2024 <a href={config.site} class="hover:underline">{config.name}</a
+        >© 2024 <a title="ir a inicio" href={config.site} class="hover:underline">{config.name}</a
         >. | 
-        <a href={`tel:${config.phone}`} class="hover:underline">
-          +52 {config.phone}
+        <a title="llamar por teléfono" href={`tel:${config.phone}`} class="hover:underline">
+          +52 {config.phone} 
         </a> | 
-        <a href={`mailto:convergenciaweb@trongar.site`} class="hover:underline">
+        <a title="enviar un correo" href={`mailto:convergenciaweb@trongar.site`} class="hover:underline">
           convergenciaweb@trongar.site
         </a>
       </span>

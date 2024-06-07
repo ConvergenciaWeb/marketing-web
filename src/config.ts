@@ -1,8 +1,8 @@
 export default {
   site: "https://convergenciaweb.com/paginas-web-en-tabasco",
-  name: "Convergencia Web | Páginas Web Profesionales en Tabasco",
+  name: "Convergencia Web | Paginas Web Profesionales en Tabasco",
   description:
-    "Descubre nuestros servicios de diseño y desarrollo de páginas web en Villahermosa, Nacajuca y Jalpa de Méndez. Mejora tu presencia online con Convergencia Web.",
+    "Descubre nuestros servicios de diseño y desarrollo de paginas web en Villahermosa, Nacajuca y Jalpa de Méndez. Mejora tu presencia online con Convergencia Web.",
   og: "/og.svg",
   phone: "9618641247",
   resources: [
@@ -35,14 +35,14 @@ export default {
   ],
 sections: {
     "hero": {
-      "title": "Tu Negocio en Tabasco Merece una Página Web de Primera",
-      "subtitle": "Creamos páginas web que impulsan el crecimiento de las marcas para conectar con su público en Villahermosa, Jalpa de Méndez y Nacajuca.",
+      "title": "Tu Negocio en Tabasco Merece una Pagina Web de Primera",
+      "subtitle": "Creamos paginas web que impulsan el crecimiento de las marcas para conectar con su público en Villahermosa, Jalpa de Méndez y Nacajuca.",
       "cta1": "Conócenos",
       "cta2": "Contáctenos"
     },
     "features": {
       "title": "Transformando Tabasco con Diseño Web de Calidad",
-      "description": "En ConvergenciaWeb, nos especializamos en crear páginas web profesionales para pequeños negocios en Villahermosa y sus alrededores. Nuestro equipo combina habilidades en desarrollo web, diseño de interfaces y estrategia digital para ofrecerte una solución completa que eleve tu marca y mejore el tráfico hacia tu sitio, operamos en la región de Centro.",
+      "description": "En ConvergenciaWeb, nos especializamos en crear paginas web profesionales para pequeños negocios en Villahermosa y sus alrededores. Nuestro equipo combina habilidades en desarrollo web, diseño de interfaces y estrategia digital para ofrecerte una solución completa que eleve tu marca y mejore el tráfico hacia tu sitio, operamos en la región de Centro.",
       "popoverInfo": {
         "title": "Sobre la Región Centro",
         "paragraphs": [
@@ -58,7 +58,7 @@ sections: {
       "features": {
         "design": {
           "title": "Diseño Atractivo y Personalizado",
-          "description": "Creamos páginas web únicas y personalizadas que reflejan la identidad de tu marca y capturan la atención de tus clientes en Villahermosa.",
+          "description": "Creamos paginas web únicas y personalizadas que reflejan la identidad de tu marca y capturan la atención de tus clientes en Villahermosa.",
           "more": "En ConvergenciaWeb, entendemos la importancia de una primera impresión. Por eso, nos especializamos en crear diseños web únicos y personalizados que no solo capturan la esencia de tu marca, sino que también atraen y retienen la atención de tus clientes. Nuestro proceso de diseño incluye:",
           "list": [
             "Análisis de Marca: Estudiamos tu marca para entender su identidad y valores.",
@@ -69,7 +69,7 @@ sections: {
         },
         "seo": {
           "title": "Optimización para Motores de Búsqueda (SEO)",
-          "description": "Desarrollamos páginas web optimizadas para motores de búsqueda, asegurando que tu negocio en Villahermosa sea fácilmente encontrado por potenciales clientes en Google y otros buscadores.",
+          "description": "Desarrollamos paginas web optimizadas para motores de búsqueda, asegurando que tu negocio en Villahermosa sea fácilmente encontrado por potenciales clientes en Google y otros buscadores.",
           "more": "Nuestro enfoque en SEO garantiza que tu sitio web sea fácilmente encontrado por clientes potenciales en Google y otros buscadores. Aquí está cómo lo hacemos:",
           "list": [
             "Investigación de Palabras Clave: Identificamos las palabras clave más relevantes para tu negocio.",
@@ -81,8 +81,8 @@ sections: {
         },
         "responsive": {
           "title": "Responsive y Móvil-Amigable",
-          "description": "Nuestras páginas web están diseñadas para verse y funcionar perfectamente en todos los dispositivos, desde computadoras de escritorio hasta smartphones y tablets.",
-          "more": "En el mundo actual, es crucial que tu sitio web se vea y funcione perfectamente en todos los dispositivos. Nuestras páginas web están diseñadas para ser totalmente responsivas, lo que significa que se adaptan automáticamente a cualquier tamaño de pantalla, desde computadoras de escritorio hasta smartphones y tablets. Lo que ofrecemos:",
+          "description": "Nuestras paginas web están diseñadas para verse y funcionar perfectamente en todos los dispositivos, desde computadoras de escritorio hasta smartphones y tablets.",
+          "more": "En el mundo actual, es crucial que tu sitio web se vea y funcione perfectamente en todos los dispositivos. Nuestras paginas web están diseñadas para ser totalmente responsivas, lo que significa que se adaptan automáticamente a cualquier tamaño de pantalla, desde computadoras de escritorio hasta smartphones y tablets. Lo que ofrecemos:",
           "list": [
             "Diseño Adaptativo: Aseguramos que tu sitio web sea visualmente atractivo y funcional en cualquier dispositivo.",
             "Pruebas de Compatibilidad: Realizamos pruebas exhaustivas en múltiples dispositivos y navegadores para garantizar una experiencia uniforme.",
@@ -92,7 +92,7 @@ sections: {
         },
         "support": {
           "title": "Soporte y Mantenimiento Continuo",
-          "description": "Ofrecemos soporte y mantenimiento continuo para asegurarnos de que tu página web esté siempre actualizada y funcionando sin problemas.",
+          "description": "Ofrecemos soporte y mantenimiento continuo para asegurarnos de que tu pagina web esté siempre actualizada y funcionando sin problemas.",
           "more": "Nos comprometemos a mantener tu sitio web funcionando sin problemas y siempre actualizado. Nuestro servicio de soporte y mantenimiento continuo incluye:",
           "list": [
             "Actualizaciones Regulares: Instalación de actualizaciones de software y parches de seguridad para mantener tu sitio protegido.",

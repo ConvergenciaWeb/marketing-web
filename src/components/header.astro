@@ -5,19 +5,19 @@ import Icon from './icon.astro'
 <header class="sticky top-0 z-10">
     <nav class="bg-white border-gray-200 dark:bg-gray-800 ">
         <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl px-4 md:px-6 py-2.5">
-            <a href={config.site} class="flex items-center">
+            <a title="ir a inicio" href={config.site} class="flex items-center">
                 <Icon />
                 <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">ConvergenciaWeb</span>
             </a>
             <div class="flex items-center">
-                <a href={`tel:${config.phone}`} aria-label="Número de teléfono"class="mr-6 text-sm font-medium sm:mr-6 text-black dark:text-white hover:underline">
+                <a title="llamar por teléfono" href={`tel:${config.phone}`} aria-label="Número de teléfono"class="mr-6 text-sm font-medium sm:mr-6 text-black dark:text-white hover:underline">
                     <svg class="w-6 h-6 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.427 14.768 17.2 13.542a1.733 1.733 0 0 0-2.45 0l-.613.613a1.732 1.732 0 0 1-2.45 0l-1.838-1.84a1.735 1.735 0 0 1 0-2.452l.612-.613a1.735 1.735 0 0 0 0-2.452L9.237 5.572a1.6 1.6 0 0 0-2.45 0c-3.223 3.2-1.702 6.896 1.519 10.117 3.22 3.221 6.914 4.745 10.12 1.535a1.601 1.601 0 0 0 0-2.456Z"/>
                       </svg>
                       
                       
                 </a>
-                <a href="/paginas-web-en-tabasco#contact" class="hidden sm:inline text-sm font-medium sm:mr-6 text-primary-600 dark:text-primary-500 hover:underline">Contactanos</a>
+                <a title="ir a contacto" href="/paginas-web-en-tabasco#contact" class="hidden sm:inline text-sm font-medium sm:mr-6 text-primary-600 dark:text-primary-500 hover:underline">Contactanos</a>
             </div>
         </div>
     </nav>
@@ -26,25 +26,25 @@ import Icon from './icon.astro'
             <div class="flex items-center justify-around md:justify-normal">
                 <ul class="flex flex-row mt-0 space-x-8 text-sm font-medium">
                     <li>
-                        <a href="/paginas-web-en-tabasco#home" class="text-gray-900 dark:text-white hover:underline" aria-current="page">Inicio</a>
+                        <a title="ir a inicio" href="/paginas-web-en-tabasco#home" class="text-gray-900 dark:text-white hover:underline" aria-current="page">Inicio</a>
                     </li>
                     <li>
-                        <a href="/paginas-web-en-tabasco#us" class="text-gray-900 dark:text-white hover:underline">Nosotros</a>
+                        <a title="ir a sobre nosotros" href="/paginas-web-en-tabasco#us" class="text-gray-900 dark:text-white hover:underline">Nosotros</a>
                     </li>
                     <!-- <li>
-                        <a href="#work" class="text-gray-900 dark:text-white hover:underline">Portafolío</a>
+                        <a title="ir a portafolios" href="#work" class="text-gray-900 dark:text-white hover:underline">Portafolío</a>
                     </li> -->
                     <li >
-                        <a href="/paginas-web-en-tabasco#team" class="text-gray-900 dark:text-white hover:underline">Equipo</a>
+                        <a title="ir a equipo" href="/paginas-web-en-tabasco#team" class="text-gray-900 dark:text-white hover:underline">Equipo</a>
                     </li>
                     <li class="hidden md:inline">
-                        <a href="/paginas-web-en-tabasco#pricing" class="text-gray-900 dark:text-white hover:underline">Precios</a>
+                        <a title="ir a precios" href="/paginas-web-en-tabasco#pricing" class="text-gray-900 dark:text-white hover:underline">Precios</a>
                     </li>
                     <li class="hidden md:inline">
-                        <a href="/paginas-web-en-tabasco#blog" class="text-gray-900 dark:text-white hover:underline">Blog</a>
+                        <a title="ir a blog" href="/paginas-web-en-tabasco#blog" class="text-gray-900 dark:text-white hover:underline">Blog</a>
                     </li>
                     <li class="hidden md:inline">
-                        <a href="/paginas-web-en-tabasco#contact" class="text-gray-900 dark:text-white hover:underline">Contacto</a>
+                        <a title="ir a contacto" href="/paginas-web-en-tabasco#contact" class="text-gray-900 dark:text-white hover:underline">Contacto</a>
                     </li>
                 </ul>
                 <button id="dropdownDefault" aria-label="more options menu" data-dropdown-toggle="dropdown" data-dropdown-placement="bottom" class="text-gray-500 md:hidden dark:hover:bg-gray-600 dark:text-gray-400 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-full text-sm p-1.5">
@@ -54,13 +54,13 @@ import Icon from './icon.astro'
                     <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefault">
                         
                         <li>
-                            <a href="/paginas-web-en-tabasco#pricing" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Precios</a>
+                            <a title="ir a precios" href="/paginas-web-en-tabasco#pricing" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Precios</a>
                         </li>
                         <li>
-                            <a href="/paginas-web-en-tabasco#blog" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Blog</a>
+                            <a title="ir a blog" href="/paginas-web-en-tabasco#blog" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Blog</a>
                         </li>
                         <li>
-                            <a href="/paginas-web-en-tabasco#contact" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Contacto</a>
+                            <a title="ir a contacto" href="/paginas-web-en-tabasco#contact" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Contacto</a>
                         </li>
                     </ul>
                 </div>
