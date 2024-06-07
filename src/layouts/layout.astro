@@ -30,6 +30,49 @@ const { title = config.name, description = config.description, og = config.og,  
     <meta name="twitter:card" content={description} />
     <title>{title}</title>
     <meta name="description" content={description} />
+    <script is:inline type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "ConvergenciaWeb",
+        "image": "http://convergenciaweb.com/logo.webp", 
+        "url": "http://convergenciaweb.com/paginas-web-en-tabasco",
+        "telephone": "+52-961-864-1247",
+        // "address": {
+        //   "@type": "PostalAddress",
+        //   "streetAddress": "Calle de Ejemplo 123",
+        //   "addressLocality": "Villahermosa",
+        //   "addressRegion": "Tabasco",
+        //   "postalCode": "86000",
+        //   "addressCountry": "MX"
+        // },
+        // "geo": {
+        //   "@type": "GeoCoordinates",
+        //   "latitude": 17.9869,
+        //   "longitude": -92.9303
+        // },
+        "sameAs": [
+          "https://www.facebook.com/people/ConvergenciaWeb/61560199089942/",
+          "https://www.instagram.com/convergencia.web/"
+        ],
+        // "openingHours": "Mo,Tu,We,Th,Fr 09:00-18:00",
+        "priceRange": "$$",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5",
+          "reviewCount": "20"
+        },
+        "service": {
+          "@type": "Service",
+          "serviceType": "Diseño y Desarrollo de Páginas Web",
+          "areaServed": {
+            "@type": "Place",
+            "name": "Tabasco"
+          }
+        }
+      }
+      </script>
+      
     <link rel="icon" href="/favicon.svg" type="image/x-icon" />
     <!-- preconects -->
     <link rel="preconnect" href="https://newassets.hcaptcha.com" />
