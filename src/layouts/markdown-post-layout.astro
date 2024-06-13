@@ -5,16 +5,17 @@ import { readingTime, truncate } from "../utils";
 import Layout from "./layout.astro";
 import config from "../config";
 import { getCollection } from "astro:content";
-const { frontmatter } = Astro.props;
+const { frontmatter, slug } = Astro.props;
 const allPosts = await getCollection("posts");
 const posts = allPosts.slice(-3).reverse();
+const og = `${config.site}${frontmatter.image.url}`;
 ---
 
 <Layout
-  title={`${frontmatter.title} | ConvergenciaWeb`}
+  title={`${frontmatter.title}`}
   description={frontmatter.description}
-  og={config.site + frontmatter.image.url}
-  link={config.site + frontmatter.url}
+  {og}
+  link={config.site + slug}
 >
   <main class="pb-16 lg:pb-24 bg-white dark:bg-gray-900 antialiased">
     <header class="py-12">
