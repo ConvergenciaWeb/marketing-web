@@ -1,7 +1,8 @@
 ---
 import { Image } from "astro:assets";
 import { truncate, readingTime } from "../utils";
-const allPosts = await Astro.glob("../pages/blog/**/*.md");
+import { getCollection } from "astro:content";
+const allPosts = await getCollection("posts");
 const posts = allPosts.slice(-7);
 // last element in the array
 const lastPost = posts.pop();
@@ -43,27 +44,27 @@ if (otherPosts[0]) {
         {
           lastPost && (
             <article>
-              <a title="ver post" href={lastPost.url}>
+              <a title="ver post" href={`/blog/${lastPost.slug}`}>
                 <Image
                     width={384}
                     height={216}
                   class="mb-5 rounded-lg w-full max-w-sm aspect-video object-cover object-center"
-                  src={lastPost.frontmatter.image.url}
-                  alt={lastPost.frontmatter.image.alt}
+                  src={lastPost.data.image.url}
+                  alt={lastPost.data.image.alt}
                 />
               </a>
               <h3 class="my-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                <a title="ver post" href={lastPost.url}>{lastPost.frontmatter.title}</a>
+                <a title="ver post" href={`/blog/${lastPost.slug}`}>{lastPost.data.title}</a>
               </h3>
               <p class="mb-4 font-light text-gray-500 dark:text-gray-400 text-pretty">
-                {lastPost.frontmatter.description}
+                {lastPost.data.description}
               </p>
               <a
               title="ver post"
-                href={lastPost.url}
+                href={`/blog/${lastPost.slug}`}
                 class="inline-flex items-center font-medium text-primary-600 hover:underline dark:text-primary-500"
               >
-                Lectura de {readingTime(lastPost?.rawContent()!)} min 
+                Lectura de {readingTime(lastPost?.body)} min 
                 <svg
                   class="ml-2 w-4 h-4"
                   fill="currentColor"
@@ -88,17 +89,17 @@ if (otherPosts[0]) {
             return (
               <article>
                 <h3 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                  <a title="ver post" href={post.url}>{post.frontmatter.title}</a>
+                  <a title="ver post" href={`/blog/${post.slug}`}>{post.data.title}</a>
                 </h3>
                 <p class="mb-4 font-light text-gray-500 dark:text-gray-400 text-pretty">
-                  {truncate(post.frontmatter.description, 100)}
+                  {truncate(post.data.description, 100)}
                 </p>
                 <a
                 title="ver post"
-                  href={post.url}
+                  href={`/blog/${post.slug}`}
                   class="inline-flex items-center font-medium text-primary-600 hover:underline dark:text-primary-500"
                 >
-                  Lectura de {readingTime(post?.rawContent()!)} min 
+                  Lectura de {readingTime(post?.body)} min 
                   <svg
                     class="ml-2 w-4 h-4"
                     fill="currentColor"
@@ -124,14 +125,14 @@ if (otherPosts[0]) {
             return (
               <article>
                 <h3 class="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">
-                  <a title="ver post" href={post.url}>{post.frontmatter.title}</a>
+                  <a title="ver post" href={`/blog/${post.slug}`}>{post.data.title}</a>
                 </h3>
                 <a
                 title="ver post"
-                  href={post.url}
+                  href={`/blog/${post.slug}`}
                   class="inline-flex items-center font-medium text-primary-600 hover:underline dark:text-primary-500"
                 >
-                  Lectura de {readingTime(post?.rawContent()!)} min 
+                  Lectura de {readingTime(post?.body)} min 
                   <svg
                     class="ml-2 w-4 h-4"
                     fill="currentColor"

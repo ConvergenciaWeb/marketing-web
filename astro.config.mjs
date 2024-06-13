@@ -10,7 +10,7 @@ export default defineConfig({
   site: config.site,
   integrations: [tailwind(), sitemap()],
   redirects: {
-    "/": "/paginas-web-en-tabasco", 
+    "/": (import.meta.env.PROD) ? "/paginas-web-en-tabasco" : "/", 
   },
   output: "server",
   adapter: cloudflare({

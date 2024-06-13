@@ -1,0 +1,47 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "@layouts/layout.astro";
+import { readingTime, truncate } from "@utils";
+// import BlogPost from "../../components/BlogPost.astro";
+
+export async function getStaticPaths() {
+  const allPosts = await getCollection("posts");
+  const uniqueTags = [...new Set(allPosts.map((post) => post.data.tags).flat())];
+
+  return uniqueTags.map((tag) => {
+    const filteredPosts = allPosts.filter((post) =>
+      post.data.tags.includes(tag)
+    );
+    return {
+      params: { tag },
+      props: { posts: filteredPosts },
+    };
+  });
+}
+
+const { tag } = Astro.params;
+const { posts } = Astro.props;
+---
+
+<BaseLayout title={tag}>
+  <p>Posts tagged with {tag}</p>
+  <ul>
+    { (posts) && posts.map((post) => (
+        <div class="mb-6">
+          <h5 class="mb-2 text-lg font-bold leading-tight text-gray-900 dark:text-white">
+            {post.data.title}
+          </h5>
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            {truncate(post.data.description, 75)}
+          </p>
+          <a
+            title="ver post"
+            href={`/blog/${post.slug}`}
+            class="inline-flex items-center font-medium underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline"
+          >
+            Lectura de {readingTime(post?.body)} min
+          </a>
+        </div>
+      )) }
+  </ul>
+</BaseLayout>

@@ -4,8 +4,9 @@ import ShareSocialMedia from "../components/share-social-media.astro";
 import { readingTime, truncate } from "../utils";
 import Layout from "./layout.astro";
 import config from "../config";
+import { getCollection } from "astro:content";
 const { frontmatter } = Astro.props;
-const allPosts = await Astro.glob("../pages/blog/**/*.md");
+const allPosts = await getCollection("posts");
 const posts = allPosts.slice(-3).reverse();
 ---
 
@@ -35,7 +36,7 @@ const posts = allPosts.slice(-3).reverse();
         >
           {frontmatter.title}
         </h1>
-        <p class="text-lg font-normal text-gray-500 dark:text-gray-400">
+        <p class="text-lg text-balance font-normal text-gray-500 dark:text-gray-400">
           {frontmatter.description}
         </p>
       </div>
@@ -60,12 +61,12 @@ const posts = allPosts.slice(-3).reverse();
             class="text-base mb-4 lg:mb-0 font-normal text-gray-500 dark:text-gray-400"
             >Por <a
             title="pagina del autor"
-              href="https://trongar.site"
+              href={frontmatter.author.link}
               rel="noopener"
               target="_blank"
               rel="author"
               class="font-bold text-gray-900 dark:text-white no-underline hover:underline"
-              >{frontmatter.author}</a
+              >{frontmatter.author.name}</a
             ></span
           >
           <ShareSocialMedia />
@@ -148,17 +149,17 @@ const posts = allPosts.slice(-3).reverse();
               posts.map((post) => (
                 <div class="mb-6">
                   <h5 class="mb-2 text-lg font-bold leading-tight text-gray-900 dark:text-white">
-                    {post.frontmatter.title}
+                    {post.data.title}
                   </h5>
                   <p class="mb-2 text-gray-500 dark:text-gray-400">
-                    {truncate(post.frontmatter.description, 75)}
+                    {truncate(post.data.description, 75)}
                   </p>
                   <a
                     title="ver post"
-                    href={post.url}
+                    href={`/blog/${post.slug}`}
                     class="inline-flex items-center font-medium underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline"
                   >
-                    Lectura de {readingTime(post?.rawContent()!)} min
+                    Lectura de {readingTime(post?.body)} min
                   </a>
                 </div>
               ))
@@ -206,28 +207,28 @@ const posts = allPosts.slice(-3).reverse();
       {
         posts.map((post) => (
           <article class="flex mb-8">
-            <a title="ver post" href={post.url} class="shrink-0">
+            <a title="ver post" href={`/blog/${post.slug}`} class="shrink-0">
               <Image
-                src={post.frontmatter.image.url}
+                src={post.data.image.url}
                 width="128"
                 height="128"
                 class="mr-5 w-32 h-32 max-w-full align-middle object-cover rounded-full"
-                alt={post.frontmatter.image.alt}
+                alt={post.data.image.alt}
               />
             </a>
             <div class="flex flex-col justify-center">
               <h2 class="mb-2 text-xl font-bold leading-tight text-gray-900 dark:text-white">
-                <a title="ver post" href={post.url}>{post.frontmatter.title}</a>
+                <a title="ver post" href={`/blog/${post.slug}`}>{post.data.title}</a>
               </h2>
               <p class="mb-2 text-gray-500 dark:text-gray-400">
-                {truncate(post.frontmatter.description, 200)}
+                {truncate(post.data.description, 200)}
               </p>
               <a
               title="ver post"
-                href={post.url}
+                href={`/blog/${post.slug}`}
                 class="inline-flex items-center font-medium underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline"
               >
-                Lectura de {readingTime(post?.rawContent()!)} min
+                Lectura de {readingTime(post?.body)} min
               </a>
             </div>
           </article>

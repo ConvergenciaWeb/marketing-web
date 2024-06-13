@@ -1,5 +1,4 @@
 ---
-layout: "../../layouts/markdown-post-layout.astro"
 title: 'SSL: Protege tu Negocio en Internet y Gana la Confianza de tus Clientes en Tabasco'
 pubDate: 2024-05-31T17:30:00-06:00
 description: 'Descubre la importancia del certificado SSL para tu negocio en internet. En ConvergenciaWeb, te ayudamos a proteger tu sitio web y a ganar la confianza de tus clientes en Tabasco y los municipios de la región centro.'
