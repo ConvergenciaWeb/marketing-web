@@ -7,7 +7,7 @@ pricing:
     subsInfo: Hosting, Dominio y Mantenimiento.
 feat:
     - Infraestructura web (Dominio, Host, SSL, protección DDoS)
-    - Diseño y desarrollo Web
+    - Diseño y Desarrollo Web
     - Secciones básicas
     - Ficha técnica
     - Formulario de contacto
