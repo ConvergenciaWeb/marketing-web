@@ -21,7 +21,25 @@ const postsCollection = defineCollection({
 
     })
 });
+const plansCollection = defineCollection({
+  type: "content",
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    pricing: z.object({
+      initial: z.number().optional().nullable(),
+      subscription: z.number().optional().nullable(),
+      subsInfo: z.string(),
+    }),
+    feat: z.array(z.string()),
+    benefits: z.array(z.string()),
+    cta: z.string(),
+    link: z.string(),
+    available: z.boolean().optional().nullable(),
+  }),
+})
 // Export a single `collections` object to register your collection(s)
 export const collections = {
   posts: postsCollection,
+  plans: plansCollection,
 };

@@ -90,6 +90,74 @@
           "type": "string"
         }
       ]
+    },
+    {
+      "name": "pricing",
+      "pageBundle": false,
+      "fields": [
+        {
+          "title": "title",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "title": "description",
+          "name": "description",
+          "type": "string"
+        },
+        {
+          "title": "pricing",
+          "name": "pricing",
+          "type": "fields",
+          "fields": [
+            {
+              "title": "initial",
+              "name": "initial",
+              "type": "number"
+            },
+            {
+              "title": "subscription",
+              "name": "subscription",
+              "type": "number"
+            },
+            {
+              "title": "subsInfo",
+              "name": "subsInfo",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "title": "feat",
+          "name": "feat",
+          "type": "list"
+        },
+        {
+          "title": "benefits",
+          "name": "benefits",
+          "type": "list"
+        },
+        {
+          "title": "type",
+          "name": "type",
+          "type": "string"
+        },
+        {
+          "title": "cta",
+          "name": "cta",
+          "type": "string"
+        },
+        {
+          "title": "link",
+          "name": "link",
+          "type": "string"
+        },
+        {
+          "title": "available",
+          "name": "available",
+          "type": "boolean"
+        }
+      ]
     }
   ]
 }
