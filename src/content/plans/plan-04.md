@@ -7,7 +7,7 @@ pricing:
     subscription: null
     subsInfo: Los precios se calculan en base a las necesidades del cliente
 feat: 
-    - Todo lo del Plan Avanzado
+    - Todo lo del Plan Destacado
     - Desarrollo Personalizado
     - E-commerce Avanzado
     - Análisis y Consultoría

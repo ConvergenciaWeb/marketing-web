@@ -4,14 +4,15 @@ description: Ideal para pequeñas y medianas empresas que necesitan una presenci
 pricing:
     initial: 1500
     subscription: 200
-    subsInfo: Para hosting y mantenimiento
+    subsInfo: Hosting, Dominio y Mantenimiento.
 feat:
-    - Sección Hero
-    - Sección Sobre nosotros
-    - Sección Testimonios
+    - Infraestructura web (Dominio, Host, SSL, protección DDoS)
+    - Diseño y desarrollo Web
+    - Secciones básicas
     - Ficha técnica
     - Formulario de contacto
     - Optimizaciones de SEO básicas
+    - Mantenimiento básico(3 tickets de soporte al més)
 benefits:
     - Diseño profesional y moderno.
     - Rápida implementación.

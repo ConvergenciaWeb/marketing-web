@@ -1,6 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 import config from "../config";
+import { kFormatter } from "@utils";
 const content = config.sections.pricing;
 const plans = await getCollection("plans");
 
@@ -67,14 +68,8 @@ const plans = await getCollection("plans");
                 <div data-popper-arrow></div>
               </div>
           </div>
-            <div class="text-3xl font-semibold text-primary-600">{plan.data.pricing.initial.toLocaleString("es-mx", {
-              currency: "MXN",
-              style: "currency",
-            })}</div>
-            <div class="text-3xl font-semibold text-primary-600">{plan.data.pricing.subscription.toLocaleString("es-mx", {
-              currency: "MXN",
-              style: "currency",
-            })}</div>
+            <div class="text-3xl font-semibold text-primary-600">${kFormatter( plan.data.pricing.initial)}</div>
+            <div class="text-3xl font-semibold text-primary-600">${kFormatter(plan.data.pricing.subscription)}</div>
         </div>
           )}
           <hr class="my-8"/>
