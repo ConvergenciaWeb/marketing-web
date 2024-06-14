@@ -16,7 +16,7 @@ tags:
     - Jalpa de Méndez
     - Centro
 image:
-    url: /blog/images/ssl-banner.webp
+    url: /blog/images/ssl-banner.jpg
     alt: Escudo de ciberseguridad con la palabra SSL, rodeado de circuitos digitales, ambientado en la selva tropical de Tabasco, México. La imagen representa la seguridad y protección de datos en entornos digitales para empresas en Tabasco.
 author:
     name: Edgar Ulises Sánchez Izquierdo

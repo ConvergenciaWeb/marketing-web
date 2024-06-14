@@ -14,7 +14,7 @@ tags:
     - Google
     - ConvergenciaWeb
 image:
-    url: /blog/images/oficinas-google.webp
+    url: /blog/images/oficinas-google.jpg
     alt: Oficinas de Google en Villahermosa, Tabasco, con una combinación de tecnología moderna y elementos culturales locales. El espacio cuenta con muebles coloridos, murales que representan paisajes y patrimonio local, vegetación tropical, hamacas y decoraciones tradicionales, junto con estaciones de trabajo de última generación, áreas colaborativas y salas de reuniones innovadoras.
 author:
     name: Edgar Ulises Sánchez Izquierdo

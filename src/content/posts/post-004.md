@@ -11,7 +11,7 @@ tags:
     - Emprendimiento en Tabasco
     - Marketing eficiente para PyMEs
 image:
-    url: /blog/images/OIG1.jpeg
+    url: /blog/images/OIG1.jpg
     alt: |-
         En pleno corazón de Villahermosa, bajo un vibrante cielo azul, comerciantes y empresarios tabasqueños se reúnen en un animado mercado al aire libre. Entre los coloridos puestos de artesanías y productos locales, se puede sentir la energía de la comunidad enfocada en el crecimiento y la expansión de sus PyMEs. Cada uno, vestido con trajes tradicionales tabasqueños en un elegante tono azul índigo, comparte estrategias y conocimientos sobre la segmentación de mercado, potenciando así sus negocios. 
 
