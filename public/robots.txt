@@ -5,6 +5,7 @@ Disallow: /qr
 Disallow: /rss.xml
 Disallow: /tags
 Disallow: /tags/*
+Disallow: /404
 Allow: /
 
 
