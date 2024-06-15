@@ -6,6 +6,7 @@ Disallow: /rss.xml
 Disallow: /tags
 Disallow: /tags/*
 Disallow: /404
+Disallow: /faqs
 Allow: /
 
 
