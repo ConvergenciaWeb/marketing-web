@@ -9,9 +9,9 @@ import cloudflare from "@astrojs/cloudflare";
 export default defineConfig({
   site: config.site,
   integrations: [tailwind(), sitemap()],
-  redirects: {
-    "/": (import.meta.env.PROD) ? "/paginas-web-en-tabasco" : "/", 
-  },
+  redirects: (import.meta.env.PROD) ? {
+    "/": "/paginas-web-en-tabasco", 
+  } : {},
   output: "server",
   adapter: cloudflare({
     mode: 'directory',
