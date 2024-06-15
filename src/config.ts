@@ -19,6 +19,10 @@ export default {
       name: "FAQ",
       url: "/soon",
     },
+    {
+      name: "RSS",
+      url: "/rss.xml",
+    }
   ],
   social: [
     {
