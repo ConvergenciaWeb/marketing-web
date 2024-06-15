@@ -1,4 +1,11 @@
 User-agent: *
+Disallow: /pdp
+Disallow: /tyc
+Disallow: /qr
+Disallow: /rss.xml
+Disallow: /tags
+Disallow: /tags/*
 Allow: /
+
 
 Sitemap: https://convergenciaweb.com/sitemap-index.xml
