@@ -14,6 +14,6 @@ const { Content } = await entry.render();
 
 export const prerender = true;
 ---
-<MarkdownPostLayout slug={entry.slug} frontmatter={entry.data}>
+<MarkdownPostLayout id={entry.id} slug={entry.slug} frontmatter={entry.data}>
     <Content />
 </MarkdownPostLayout>

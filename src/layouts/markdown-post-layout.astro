@@ -5,7 +5,7 @@ import { readingTime, truncate } from "../utils";
 import Layout from "./layout.astro";
 import config from "../config";
 import { getCollection } from "astro:content";
-const { frontmatter, slug } = Astro.props;
+const { frontmatter, slug, id } = Astro.props;
 const allPosts = await getCollection("posts");
 const posts = allPosts.slice(-3).reverse();
 const og = `${config.site}${frontmatter.image.url}`;
@@ -33,11 +33,15 @@ const og = `${config.site}${frontmatter.image.url}`;
           </time></span
         >
         <h1
+          transition:name={`${id}-title-transition`}
           class="mx-auto mb-4 max-w-2xl text-2xl dark:text-white font-extrabold leading-none text-gray-900 sm:text-3xl lg:text-4xl"
         >
           {frontmatter.title}
         </h1>
-        <p class="text-lg text-balance font-normal text-gray-500 dark:text-gray-400">
+        <p
+          transition:name={`${id}-description-transition`}
+          class="text-lg text-balance font-normal text-gray-500 dark:text-gray-400"
+        >
           {frontmatter.description}
         </p>
       </div>
@@ -54,6 +58,7 @@ const og = `${config.site}${frontmatter.image.url}`;
           class="mb-5 rounded-lg w-full aspect-video object-cover object-center"
           src={frontmatter.image.url}
           alt={frontmatter.image.alt}
+          transition:name={`${id}-image-transition`}
         />
         <div
           class="flex flex-col lg:flex-row justify-between lg:items-center py-6 border-t border-b border-gray-200 dark:border-gray-700"
@@ -61,7 +66,7 @@ const og = `${config.site}${frontmatter.image.url}`;
           <span
             class="text-base mb-4 lg:mb-0 font-normal text-gray-500 dark:text-gray-400"
             >Por <a
-            title="pagina del autor"
+              title="pagina del autor"
               href={frontmatter.author.link}
               rel="noopener"
               target="_blank"
@@ -116,7 +121,7 @@ const og = `${config.site}${frontmatter.image.url}`;
               >
                 <li>
                   <a
-                  title="reportar problema"
+                    title="reportar problema"
                     href="/soon"
                     class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                     >Reportar problema</a
@@ -124,7 +129,7 @@ const og = `${config.site}${frontmatter.image.url}`;
                 </li>
                 <li>
                   <a
-                  title="enviar sugerencia"
+                    title="enviar sugerencia"
                     href="/soon"
                     class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                     >Enviar sugerencia</a
@@ -218,14 +223,17 @@ const og = `${config.site}${frontmatter.image.url}`;
               />
             </a>
             <div class="flex flex-col justify-center">
-              <h2 class="mb-2 text-xl font-bold leading-tight text-gray-900 dark:text-white">
-                <a title="ver post" href={`/blog/${post.slug}`}>{post.data.title}</a>
+              <h2 
+                 class="mb-2 text-xl font-bold leading-tight text-gray-900 dark:text-white">
+                <a title="ver post" href={`/blog/${post.slug}`}>
+                  {post.data.title}
+                </a>
               </h2>
               <p class="mb-2 text-gray-500 dark:text-gray-400">
                 {truncate(post.data.description, 200)}
               </p>
               <a
-              title="ver post"
+                title="ver post"
                 href={`/blog/${post.slug}`}
                 class="inline-flex items-center font-medium underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline"
               >

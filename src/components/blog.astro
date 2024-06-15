@@ -51,12 +51,17 @@ if (otherPosts[0]) {
                   class="mb-5 rounded-lg w-full max-w-sm aspect-video object-cover object-center"
                   src={lastPost.data.image.url}
                   alt={lastPost.data.image.alt}
+                  transition:name={`${lastPost.id}-image-transition`}
                 />
               </a>
-              <h3 class="my-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+              <h3 
+                  transition:name={`${lastPost.id}-title-transition`}
+                  class="my-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                 <a title="ver post" href={`/blog/${lastPost.slug}`}>{lastPost.data.title}</a>
               </h3>
-              <p class="mb-4 font-light text-gray-500 dark:text-gray-400 text-pretty">
+              <p 
+                  transition:name={`${lastPost.id}-description-transition`}
+                  class="mb-4 font-light text-gray-500 dark:text-gray-400 text-pretty">
                 {lastPost.data.description}
               </p>
               <a
@@ -88,10 +93,14 @@ if (otherPosts[0]) {
             if (post === undefined) return;
             return (
               <article>
-                <h3 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                <h3
+                  transition:name={`${post.id}-title-transition`}
+                  class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                   <a title="ver post" href={`/blog/${post.slug}`}>{post.data.title}</a>
                 </h3>
-                <p class="mb-4 font-light text-gray-500 dark:text-gray-400 text-pretty">
+                <p 
+                  transition:name={`${post.id}-description-transition`}
+                  class="mb-4 font-light text-gray-500 dark:text-gray-400 text-pretty">
                   {truncate(post.data.description, 100)}
                 </p>
                 <a
@@ -124,7 +133,9 @@ if (otherPosts[0]) {
             if (post === undefined) return;
             return (
               <article>
-                <h3 class="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">
+                <h3 
+                  transition:name={`${post.id}-title-transition`}
+                  class="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">
                   <a title="ver post" href={`/blog/${post.slug}`}>{post.data.title}</a>
                 </h3>
                 <a
