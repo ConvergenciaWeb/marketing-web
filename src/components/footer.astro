@@ -27,7 +27,7 @@ import Icon from "./icon.astro";
             {
               config.resources.map((resource) => (
                 <li class="mb-4">
-                  <a title={`ir a ${resource.name}`} href={resource.url} class="hover:underline">
+                  <a target="_blank" title={`ir a ${resource.name}`} href={resource.url} class="hover:underline">
                     {resource.name}
                   </a>
                 </li>
@@ -45,7 +45,7 @@ import Icon from "./icon.astro";
             {
               config.social.map((red) => (
                 <li class="mb-4">
-                  <a title={`ver pagina de ${red.name}`}  href={red.url} class="hover:underline">
+                  <a target="_blank" title={`ver pagina de ${red.name}`}  href={red.url} class="hover:underline">
                     {red.name}
                   </a>
                 </li>
