@@ -78,9 +78,7 @@
               "title": "Link",
               "name": "link",
               "type": "string",
-              "dataType": [
-                "url"
-              ]
+              "dataType": ["url"]
             }
           ]
         },
@@ -158,6 +156,33 @@
           "type": "boolean"
         }
       ]
+    }
+  ],
+
+  "frontMatter.data.files": [
+    {
+      "id": "faqs",
+      "title": "FAQ's",
+      "file": "[[workspace]]/data/faqs.json",
+      "fileType": "json",
+      "labelField": "question",
+      "singleEntry": false,
+      "schema": {
+        "title": "FAQs",
+        "type": "object",
+        "required": ["question", "answer"],
+        "properties": {
+          "question": {
+            "type": "string",
+            "title": "Question"
+          },
+          "answer": {
+            "type": "string",
+            "title": "Answer",
+            "multiline": true
+          }
+        }
+      }
     }
   ]
 }

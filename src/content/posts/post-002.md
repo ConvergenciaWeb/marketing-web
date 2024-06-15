@@ -4,25 +4,15 @@ pubDate: 2024-05-31T17:30:00-06:00
 type: default
 slug: post-002-ssl-protege-tu-negocio-en-internet-tabasco
 description: Descubre la importancia del certificado SSL para tu negocio en internet. En ConvergenciaWeb, te ayudamos a proteger tu sitio web y a ganar la confianza de tus clientes en Tabasco y los municipios de la región centro.
-tags:
-    - SSL
-    - certificado SSL
-    - seguridad web
-    - protección de datos
-    - negocios en Tabasco
-    - paginas web seguras
-    - región centro Tabasco
-    - Nacajuca
-    - Jalpa de Méndez
-    - Centro
+tags: []
 image:
-    url: /blog/images/ssl-banner.jpg
-    alt: Escudo de ciberseguridad con la palabra SSL, rodeado de circuitos digitales, ambientado en la selva tropical de Tabasco, México. La imagen representa la seguridad y protección de datos en entornos digitales para empresas en Tabasco.
+  url: /blog/images/ssl-banner.jpg
+  alt: Escudo de ciberseguridad con la palabra SSL, rodeado de circuitos digitales, ambientado en la selva tropical de Tabasco, México. La imagen representa la seguridad y protección de datos en entornos digitales para empresas en Tabasco.
 author:
-    name: Edgar Ulises Sánchez Izquierdo
-    link: https://trongar.site
+  name: Edgar Ulises Sánchez Izquierdo
+  link: https://trongar.site
 keywords:
-    - SSL
+  - SSL
 ---
 
 ¡Hola a todos! ¿Cómo están? Hoy les voy a platicar sobre un tema muy importante para todos aquellos que tienen un negocio en internet o están pensando en tener uno. Seguro han escuchado hablar del famoso "SSL", pero ¿saben realmente qué es y por qué es tan importante? Aquí en ConvergenciaWeb queremos que lo entiendan de una forma bien fácil y sin tantas palabras técnicas. ¡Vamos a ello!

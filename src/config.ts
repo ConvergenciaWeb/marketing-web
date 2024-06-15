@@ -16,8 +16,8 @@ export default {
       url: "/paginas-web-en-tabasco#blog",
     },
     {
-      name: "FAQ",
-      url: "/soon",
+      name: "FAQs",
+      url: "/faqs",
     },
     {
       name: "RSS",

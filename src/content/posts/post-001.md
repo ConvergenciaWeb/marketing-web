@@ -4,28 +4,13 @@ pubDate: 2024-05-31T14:30:00-06:00
 type: default
 keywords: []
 description: Descubre por qué tu PyMe necesita una pagina web y no solo redes sociales. En ConvergenciaWeb, te explicamos cómo una pagina web profesional mejora tu imagen, aumenta tu visibilidad en Google y genera mayor confianza en tus clientes. ¡Conoce los beneficios y da el siguiente paso para hacer crecer tu negocio!
-tags:
-    - PyMe
-    - Pagina web
-    - Diseño web
-    - ConvergenciaWeb
-    - Marketing digital
-    - SEO
-    - Redes sociales
-    - Emprendedores
-    - Negocios en línea
-    - Desarrollo web
-    - Tabasco
-    - Presencia en línea
-    - Estrategia digital
-    - Optimización web
-    - Credibilidad de negocios
+tags: []
 image:
-    url: /blog/images/airtable-sales-planning-expert-1024x683.jpg
-    alt: Diseño y construcción de paginas web para PyMEs - ConvergenciaWeb.
+  url: /blog/images/airtable-sales-planning-expert-1024x683.jpg
+  alt: Diseño y construcción de paginas web para PyMEs - ConvergenciaWeb.
 author:
-    name: Edgar Ulises Sánchez Izquierdo
-    link: https://trongar.site
+  name: Edgar Ulises Sánchez Izquierdo
+  link: https://trongar.site
 slug: post-001-por-que-tu-pyme-necesita-una-pagina-web
 ---
 
